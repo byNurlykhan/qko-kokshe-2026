@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-kk="ҚКО · Көкшетау 2026 — Көшпелі отырыс бағдарламасы" data-ru="КБС · Кокшетау 2026 — Программа выездного заседания">ҚКО · Көкшетау 2026 — Көшпелі отырыс бағдарламасы</title>
+<meta name="description" content="Қазақстан Кітапханалар Одағының 2026 жылғы 26-27 маусымда Көкшетау қаласында өтетін көшпелі отырысының бағдарламасы">
+<meta name="theme-color" content="#0c4f74">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --teal:#64C8BD;
+  --deep:#094A6F;
+  --deep-2:#073d5c;
+  --white:#FFFFFF;
+  --glass:rgba(255,255,255,0.10);
+  --glass-strong:rgba(255,255,255,0.18);
+  --glass-soft:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.30);
+  --border-soft:rgba(255,255,255,0.16);
+  --ink:#FFFFFF;
+  --ink-2:rgba(255,255,255,0.78);
+  --ink-3:rgba(255,255,255,0.54);
+  --divider:rgba(255,255,255,0.14);
+  --gold:#F3C677;
+  --live:#3DDC84;
+  --radius-xl:30px;
+  --radius-lg:24px;
+  --radius-md:18px;
+  --radius-sm:12px;
+  --shadow:0 24px 70px -28px rgba(2,16,24,0.55);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:
+    radial-gradient(900px 600px at 8% -8%, rgba(255,255,255,0.10), transparent 60%),
+    radial-gradient(1100px 700px at 105% 10%, rgba(9,74,111,0.55), transparent 55%),
+    linear-gradient(160deg,#64C8BD 0%, #2E96A0 28%, #126E8E 55%, #094A6F 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{display:block;}
+a{color:inherit;}
+button{font-family:var(--font);}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+
+/* ============================================================
+   ICON helpers
+   ============================================================ */
+.ic{width:20px;height:20px;flex:none;}
+.ic-lg{width:26px;height:26px;}
+
+/* ============================================================
+   LAYOUT WRAPPERS
+   ============================================================ */
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+section{position:relative;}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:sticky; top:0; z-index:60;
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  background:rgba(8,58,86,0.42);
+  border-bottom:1px solid var(--border-soft);
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(145deg, rgba(255,255,255,0.32), rgba(255,255,255,0.06));
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  flex:none;
+}
+.brand-mark .ic{color:var(--white);width:20px;height:20px;}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;}
+.brand-text strong{font-size:14.5px;font-weight:700;letter-spacing:-0.01em;}
+.brand-text span{font-size:11.5px;color:var(--ink-3);font-weight:500;}
+.nav-links{display:flex;align-items:center;gap:6px;}
+.nav-link{
+  font-size:14px;font-weight:600;color:var(--ink-2);text-decoration:none;
+  padding:8px 14px;border-radius:100px;transition:background .25s var(--ease), color .25s var(--ease);
+}
+.nav-link:hover{background:var(--glass);color:var(--white);}
+.nav-right{display:flex;align-items:center;gap:14px;}
+
+/* segmented language toggle */
+.seg{
+  position:relative;display:flex;background:rgba(255,255,255,0.10);
+  border:1px solid var(--border-soft); border-radius:100px; padding:3px;
+}
+.seg-pill{
+  position:absolute; top:3px; bottom:3px; left:3px;
+  width:calc(50% - 3px);
+  background:var(--white); border-radius:100px;
+  transition:transform .35s var(--ease);
+  box-shadow:0 6px 16px -6px rgba(0,0,0,0.35);
+}
+.seg button{
+  position:relative; z-index:1; border:none; background:transparent; cursor:pointer;
+  padding:7px 16px; font-size:13px; font-weight:700; color:var(--ink-2);
+  border-radius:100px; min-width:54px; transition:color .3s var(--ease);
+  letter-spacing:0.01em;
+}
+.seg button.active{color:var(--deep);}
+#langSeg .seg-pill{transform:translateX(0%);}
+body.lang-ru #langSeg .seg-pill{transform:translateX(100%);}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:64px 0 40px; overflow:hidden;}
+.hero-grid{
+  display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:end; position:relative; z-index:2;
+}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:12.5px; font-weight:700; letter-spacing:0.10em; text-transform:uppercase;
+  color:var(--ink-2); background:var(--glass); border:1px solid var(--border-soft);
+  padding:7px 14px 7px 10px; border-radius:100px; margin-bottom:22px;
+}
+.eyebrow .ic{width:15px;height:15px;color:var(--gold);}
+h1.hero-title{
+  font-size:clamp(2rem, 4.4vw, 3.4rem); font-weight:800; letter-spacing:-0.025em;
+  line-height:1.08; margin:0 0 18px;
+}
+.hero-sub{
+  font-size:clamp(1rem,1.6vw,1.18rem); color:var(--ink-2); max-width:560px; line-height:1.55; margin:0 0 28px;
+  font-weight:400;
+}
+.meta-chips{display:flex; flex-wrap:wrap; gap:10px;}
+.chip{
+  display:flex; align-items:center; gap:9px;
+  background:var(--glass); border:1px solid var(--border-soft); border-radius:16px;
+  padding:11px 15px; backdrop-filter:blur(10px);
+}
+.chip .ic{color:var(--teal);}
+.chip-text{display:flex; flex-direction:column; line-height:1.25;}
+.chip-text b{font-size:13.5px; font-weight:700;}
+.chip-text small{font-size:11.5px; color:var(--ink-3); font-weight:500;}
+
+/* countdown card */
+.count-card{
+  background:linear-gradient(160deg, rgba(255,255,255,0.20), rgba(255,255,255,0.06));
+  border:1px solid var(--border); border-radius:var(--radius-xl);
+  padding:26px 24px; backdrop-filter:blur(22px) saturate(160%); -webkit-backdrop-filter:blur(22px) saturate(160%);
+  box-shadow:var(--shadow); position:relative; overflow:hidden;
+}
+.count-label{
+  font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-2);
+  display:flex; align-items:center; gap:7px; margin-bottom:16px;
+}
+.count-label .dot{width:7px;height:7px;border-radius:50%; background:var(--live); box-shadow:0 0 0 4px rgba(61,220,132,0.22);}
+.count-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px;}
+.count-unit{text-align:center;}
+.count-num{
+  font-size:clamp(1.5rem,3vw,2.1rem); font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:-0.01em;
+  background:rgba(255,255,255,0.10); border-radius:14px; padding:10px 0 6px; border:1px solid var(--border-soft);
+}
+.count-unit small{display:block; margin-top:6px; font-size:10.5px; color:var(--ink-3); font-weight:600; letter-spacing:0.03em; text-transform:uppercase;}
+.count-status{margin-top:16px; font-size:13px; color:var(--ink-2); text-align:center; font-weight:500; min-height:18px;}
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.sec-head{display:flex; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:26px; flex-wrap:wrap;}
+.sec-eyebrow{font-size:12px; font-weight:700; letter-spacing:0.10em; text-transform:uppercase; color:var(--teal); margin:0 0 8px;}
+.sec-title{font-size:clamp(1.5rem,2.6vw,2.05rem); font-weight:800; letter-spacing:-0.02em; margin:0;}
+.sec-note{font-size:13.5px; color:var(--ink-3); font-weight:500; max-width:360px; text-align:right;}
+
+/* ============================================================
+   DAY SEGMENTED CONTROL
+   ============================================================ */
+.day-tabs-wrap{display:flex; justify-content:center; margin:6px 0 46px;}
+.day-tabs{
+  position:relative; display:grid; grid-template-columns:1fr 1fr; width:100%; max-width:560px;
+  background:var(--glass); border:1px solid var(--border-soft); border-radius:100px; padding:5px;
+}
+.day-tabs .pill{
+  position:absolute; top:5px; bottom:5px; left:5px; width:calc(50% - 5px);
+  background:var(--white); border-radius:100px; transition:transform .4s var(--ease);
+  box-shadow:0 10px 24px -10px rgba(0,0,0,0.4);
+}
+.day-tab{
+  position:relative; z-index:1; border:none; background:transparent; cursor:pointer;
+  padding:13px 10px; border-radius:100px; display:flex; flex-direction:column; gap:2px; align-items:center;
+  transition:color .3s var(--ease);
+}
+.day-tab b{font-size:14.5px; font-weight:700; color:var(--ink);}
+.day-tab span{font-size:11.5px; color:var(--ink-3); font-weight:600;}
+.day-tab.active b, .day-tab.active span{color:var(--deep);}
+.day-tab.active span{color:rgba(9,74,111,0.65);}
+.day-tabs[data-active="2"] .pill{transform:translateX(100%);}
+
+.day-panel{display:none;}
+.day-panel.active{display:block; animation:fadeUp .5s var(--ease);}
+@keyframes fadeUp{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);}}
+
+/* ============================================================
+   LIST GROUP (iOS settings-style grouped rows)
+   ============================================================ */
+.group{
+  background:var(--glass-soft);
+  border:1px solid var(--border-soft);
+  border-radius:var(--radius-lg);
+  backdrop-filter:blur(16px) saturate(150%); -webkit-backdrop-filter:blur(16px) saturate(150%);
+  overflow:hidden; margin-bottom:22px;
+  box-shadow:0 16px 40px -24px rgba(2,16,24,0.5);
+  opacity:0; transform:translateY(16px); transition:opacity .6s var(--ease), transform .6s var(--ease);
+}
+.group.in-view{opacity:1; transform:translateY(0);}
+.group-head{
+  display:flex; align-items:center; gap:10px; padding:16px 22px;
+  border-bottom:1px solid var(--divider); background:rgba(255,255,255,0.04);
+}
+.group-head .ic{color:var(--teal);}
+.group-head h3{font-size:14.5px; font-weight:700; letter-spacing:0.01em; margin:0; text-transform:uppercase; color:var(--ink-2);}
+
+.row{
+  display:grid; grid-template-columns:128px 44px 1fr; gap:16px; align-items:start;
+  padding:18px 22px; border-bottom:1px solid var(--divider); transition:background .25s var(--ease);
+}
+.row:last-child{border-bottom:none;}
+.row:hover{background:rgba(255,255,255,0.045);}
+
+.row-time{
+  display:flex; flex-direction:column; gap:6px; padding-top:2px;
+}
+.row-time .t{font-size:14px; font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-0.01em;}
+.status-pill{
+  display:inline-flex; align-items:center; gap:5px; font-size:10.5px; font-weight:700;
+  text-transform:uppercase; letter-spacing:0.04em; padding:4px 9px; border-radius:100px; width:fit-content;
+}
+.status-pill .dot{width:6px;height:6px;border-radius:50%;}
+.status-pill.upcoming{background:rgba(255,255,255,0.10); color:var(--ink-2);}
+.status-pill.upcoming .dot{background:var(--ink-3);}
+.status-pill.live{background:rgba(61,220,132,0.18); color:#bdf6d6;}
+.status-pill.live .dot{background:var(--live); box-shadow:0 0 0 3px rgba(61,220,132,0.25); animation:pulse 1.6s infinite;}
+.status-pill.done{background:rgba(255,255,255,0.06); color:var(--ink-3);}
+.status-pill.done .dot{background:var(--ink-3);}
+@keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.35;}}
+
+.row-icon{
+  width:44px; height:44px; border-radius:13px; flex:none;
+  background:linear-gradient(150deg, rgba(255,255,255,0.20), rgba(255,255,255,0.04));
+  border:1px solid var(--border-soft);
+  display:flex; align-items:center; justify-content:center;
+  transition:transform .3s var(--ease);
+}
+.row:hover .row-icon{transform:scale(1.06) rotate(-2deg);}
+.row-icon .ic{color:var(--white);}
+
+.row-body h4{font-size:15.5px; font-weight:700; line-height:1.4; margin:0 0 6px; letter-spacing:-0.005em;}
+.row-body .person, .row-body .venue{
+  display:flex; align-items:flex-start; gap:7px; margin:5px 0 0; font-size:13px; color:var(--ink-2); line-height:1.45;
+}
+.row-body .person .ic, .row-body .venue .ic{width:14px;height:14px; color:var(--ink-3); margin-top:2px; flex:none;}
+.row-body ul.sub-list{margin:8px 0 0; padding:0; list-style:none;}
+.row-body ul.sub-list li{
+  font-size:13px; color:var(--ink-2); padding:7px 0 7px 16px; position:relative; line-height:1.5;
+  border-top:1px dashed var(--divider);
+}
+.row-body ul.sub-list li:first-child{border-top:none; padding-top:3px;}
+.row-body ul.sub-list li::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--teal); position:absolute; left:0; top:14px;}
+
+@media (max-width:680px){
+  .row{grid-template-columns:1fr; gap:10px;}
+  .row-icon{order:0;}
+  .row-time{flex-direction:row; align-items:center; gap:10px;}
+}
+
+/* lunch / intermission banner */
+.banner{
+  display:flex; align-items:center; gap:14px; padding:14px 22px;
+  background:rgba(255,255,255,0.05); border:1px dashed var(--border-soft); border-radius:100px;
+  margin:10px 0 26px; opacity:0; transform:translateY(10px); transition:opacity .6s var(--ease), transform .6s var(--ease);
+}
+.banner.in-view{opacity:1; transform:translateY(0);}
+.banner .row-icon{width:38px;height:38px; border-radius:11px;}
+.banner-text b{font-size:13.5px; font-weight:700;}
+.banner-text span{display:block; font-size:12px; color:var(--ink-3); font-weight:500; margin-top:2px;}
+.banner-time{margin-left:auto; font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; color:var(--ink-2); white-space:nowrap;}
+
+/* parallel workshops note + grid */
+.parallel-note{
+  display:flex; align-items:center; gap:8px; font-size:13px; color:var(--ink-2); font-weight:600;
+  margin-bottom:18px; background:var(--glass); border:1px solid var(--border-soft); padding:10px 16px; border-radius:14px; width:fit-content;
+}
+.parallel-note .ic{color:var(--gold); width:16px;height:16px;}
+.loc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; align-items:start;}
+.loc-col .loc-head{
+  display:flex; align-items:center; gap:10px; margin-bottom:14px;
+}
+.loc-badge{
+  width:30px;height:30px;border-radius:50%; background:linear-gradient(150deg,var(--teal),var(--deep));
+  display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; color:#fff; flex:none;
+}
+.loc-head-text b{font-size:13.5px; font-weight:700; display:block; line-height:1.35;}
+.loc-col .group{margin-bottom:0;}
+.loc-col .row{grid-template-columns:1fr; gap:10px; padding:16px 18px;}
+.loc-col .row-time{flex-direction:row; align-items:center; gap:10px;}
+.loc-col .row-icon{width:38px;height:38px;border-radius:11px;}
+
+@media (max-width:920px){
+  .loc-grid{grid-template-columns:1fr;}
+  .hero-grid{grid-template-columns:1fr; gap:36px;}
+}
+
+/* ============================================================
+   FEEDBACK
+   ============================================================ */
+.feedback-card{
+  background:linear-gradient(165deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04));
+  border:1px solid var(--border); border-radius:var(--radius-xl);
+  padding:36px clamp(20px,4vw,44px); backdrop-filter:blur(20px) saturate(150%); -webkit-backdrop-filter:blur(20px) saturate(150%);
+  box-shadow:var(--shadow); position:relative; overflow:hidden;
+}
+.fb-grid{display:grid; grid-template-columns:1fr 1.15fr; gap:40px; align-items:start;}
+.fb-left h2{font-size:clamp(1.5rem,2.6vw,2rem); font-weight:800; letter-spacing:-0.02em; margin:0 0 12px;}
+.fb-left p{font-size:14.5px; color:var(--ink-2); line-height:1.6; max-width:380px; margin:0 0 22px;}
+.fb-points{list-style:none; margin:0 0 26px; padding:0; display:flex; flex-direction:column; gap:14px;}
+.fb-points li{display:flex; gap:11px; align-items:flex-start; font-size:13.5px; color:var(--ink-2); line-height:1.5;}
+.fb-points .ic{color:var(--teal); margin-top:2px; flex:none;}
+.fb-contact{
+  display:inline-flex; align-items:center; gap:9px; font-size:13.5px; font-weight:600;
+  background:var(--glass); border:1px solid var(--border-soft); padding:10px 16px; border-radius:14px; text-decoration:none;
+}
+.fb-contact .ic{color:var(--gold);}
+
+form#fbForm{display:flex; flex-direction:column; gap:14px;}
+.field{display:flex; flex-direction:column; gap:7px;}
+.field label{font-size:12.5px; font-weight:700; color:var(--ink-2); letter-spacing:0.01em;}
+.field input, .field select, .field textarea{
+  background:rgba(255,255,255,0.09); border:1px solid var(--border-soft); border-radius:14px;
+  padding:13px 15px; font-size:14.5px; color:var(--white); font-family:var(--font); outline:none;
+  transition:border-color .25s var(--ease), background .25s var(--ease);
+}
+.field select option{color:#0a2330;}
+.field input::placeholder, .field textarea::placeholder{color:rgba(255,255,255,0.42);}
+.field input:focus, .field select:focus, .field textarea:focus{
+  border-color:rgba(255,255,255,0.65); background:rgba(255,255,255,0.13);
+}
+.field textarea{resize:vertical; min-height:104px; line-height:1.5;}
+.field-row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.honey{position:absolute; left:-9999px; opacity:0;}
+
+.submit-btn{
+  display:flex; align-items:center; justify-content:center; gap:9px;
+  background:linear-gradient(135deg,#fff,#dfeef0); color:var(--deep);
+  border:none; border-radius:100px; padding:15px 20px; font-size:15px; font-weight:800;
+  cursor:pointer; transition:transform .25s var(--ease), box-shadow .25s var(--ease); margin-top:4px;
+  box-shadow:0 14px 30px -12px rgba(0,0,0,0.4);
+}
+.submit-btn:hover{transform:translateY(-2px); box-shadow:0 18px 36px -12px rgba(0,0,0,0.5);}
+.submit-btn:disabled{opacity:0.6; cursor:default; transform:none;}
+.submit-btn .ic{color:var(--deep);}
+
+.form-msg{font-size:13.5px; font-weight:600; padding:12px 16px; border-radius:14px; display:none; align-items:flex-start; gap:9px; line-height:1.5;}
+.form-msg.show{display:flex;}
+.form-msg.ok{background:rgba(61,220,132,0.16); color:#cdf7df;}
+.form-msg.err{background:rgba(255,255,255,0.10); color:#ffe3c2;}
+.form-msg .ic{flex:none; margin-top:2px;}
+.mailto-fallback{font-size:13px; color:var(--ink-2); text-decoration:underline; font-weight:600; display:none;}
+.mailto-fallback.show{display:inline-flex; align-items:center; gap:6px; margin-top:2px;}
+
+@media (max-width:880px){
+  .fb-grid{grid-template-columns:1fr; gap:28px;}
+  .field-row{grid-template-columns:1fr;}
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{margin-top:60px; padding:42px 0 34px; border-top:1px solid var(--border-soft); position:relative;}
+.footer-grid{display:flex; justify-content:space-between; align-items:flex-start; gap:24px; flex-wrap:wrap;}
+.footer-org{display:flex; align-items:center; gap:10px;}
+.footer-org b{font-size:14px; font-weight:700; display:block;}
+.footer-org span{font-size:12px; color:var(--ink-3); font-weight:500;}
+.footer-links{display:flex; gap:18px; flex-wrap:wrap;}
+.footer-links a{font-size:13px; color:var(--ink-2); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:7px;}
+.footer-links a .ic{width:15px;height:15px; color:var(--ink-3);}
+.footer-links a:hover{color:var(--white);}
+.footer-divider{height:1px; background:var(--divider); margin:28px 0 22px;}
+.signature{text-align:center;}
+.signature p{margin:0; font-size:12.5px; color:var(--ink-3); line-height:1.7; font-weight:500;}
+.signature p b{color:var(--ink-2); font-weight:700;}
+.to-top{
+  position:fixed; right:22px; bottom:22px; width:46px; height:46px; border-radius:50%;
+  background:rgba(255,255,255,0.16); border:1px solid var(--border); backdrop-filter:blur(14px);
+  display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:50;
+  opacity:0; pointer-events:none; transition:opacity .3s var(--ease), transform .3s var(--ease);
+}
+.to-top.show{opacity:1; pointer-events:auto;}
+.to-top:hover{transform:translateY(-3px);}
+.to-top .ic{color:var(--white);}
+
+/* generic translatable hide-default (none needed, JS swaps textContent) */
+@media (max-width:600px){
+  .nav-link{display:none;}
+  .hero{padding:44px 0 28px;}
+  .count-grid{gap:7px;}
+  .group-head{padding:14px 16px;}
+  .row{padding:15px 16px;}
+}
+</style>
+</head>
+<body class="lang-kk">
+
+<!-- ============================================================
+     ICON SPRITE
+     ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="ic-stroke-defaults" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></g>
+
+<symbol id="i-check-person" viewBox="0 0 24 24">
+<circle cx="9" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M4 20c0-3.3 2.5-6 5-6s4 1.1 4.6 2.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M15 14.5l2 2 3.5-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-megaphone" viewBox="0 0 24 24">
+<path d="M3 9.5v5a1 1 0 0 0 1 1h2.2l8.3 3.8V4.7L6.2 8.5H4a1 1 0 0 0-1 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M14.5 8a3.6 3.6 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M6.5 15.5l1 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-medal" viewBox="0 0 24 24">
+<circle cx="12" cy="15" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M9.5 11L7 4M14.5 11l2.5-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M12 12.6l1 1.8 2 .3-1.4 1.4.3 2-1.9-1-1.9 1 .3-2-1.4-1.4 2-.3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-gift" viewBox="0 0 24 24">
+<rect x="4" y="10.5" width="16" height="9.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M4 10.5h16M12 10.5v9.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M12 10.5c0-3-1.9-5-3.4-5S6.2 7 8 9c1 1.1 2.5 1.5 4 1.5zM12 10.5c0-3 1.9-5 3.4-5S17.8 7 16 9c-1 1.1-2.5 1.5-4 1.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-book-stack" viewBox="0 0 24 24">
+<rect x="3.5" y="14.8" width="17" height="3.3" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<rect x="4.5" y="10.6" width="15" height="3.3" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<rect x="5.5" y="6.4" width="13" height="3.3" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</symbol>
+
+<symbol id="i-trophy" viewBox="0 0 24 24">
+<path d="M7 4h10v4a5 5 0 0 1-10 0z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M7 6H4.7A2.3 2.3 0 0 0 7 8.2M17 6h2.3A2.3 2.3 0 0 1 17 8.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M12 13v3M9.3 20h5.4l.4-2.6h-6.2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-podium" viewBox="0 0 24 24">
+<path d="M6 20l1.5-9h9L18 20z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M9.5 11V8a2.5 2.5 0 0 1 5 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="12" cy="5" r="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+</symbol>
+
+<symbol id="i-globe" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M3.5 12h17M12 3.5c2.5 2.3 3.8 5.4 3.8 8.5s-1.3 6.2-3.8 8.5c-2.5-2.3-3.8-5.4-3.8-8.5S9.5 5.8 12 3.5z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+</symbol>
+
+<symbol id="i-scroll" viewBox="0 0 24 24">
+<path d="M6 4h10a2 2 0 0 1 2 2v13a2 2 0 0 1-2-2H8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M6 4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M9 9h6M9 12.5h6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-book" viewBox="0 0 24 24">
+<path d="M4 5.5C4 4.7 4.7 4 6.5 4H12v15H6.5C4.7 19 4 18.3 4 17.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M20 5.5c0-.8-.7-1.5-2.5-1.5H12v15h5.5c1.8 0 2.5-.7 2.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-checklist" viewBox="0 0 24 24">
+<rect x="4" y="4" width="16" height="16" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M7.3 9l1.5 1.5L11.3 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.3 15l1.5 1.5L11.3 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5 9.2h3M13.5 15.2h3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-cloud-doc" viewBox="0 0 24 24">
+<path d="M7.5 17a4 4 0 0 1-.6-7.9 5 5 0 0 1 9.7-1.4A4.2 4.2 0 0 1 17 17z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M12 11.5v5.3M10 14.5l2 2 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-sparkle" viewBox="0 0 24 24">
+<path d="M12 3l1.4 5.1L18.5 9l-5.1 1.4L12 15.5l-1.4-5.1L5.5 9l5.1-1.4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M19 15.6l.7 2.2 2.3.7-2.3.7-.7 2.2-.7-2.2-2.3-.7 2.3-.7z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-pin" viewBox="0 0 24 24">
+<path d="M12 21s7-6.5 7-11.5A7 7 0 1 0 5 9.5C5 14.5 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</symbol>
+
+<symbol id="i-cutlery" viewBox="0 0 24 24">
+<path d="M7 3v7a2 2 0 0 0 4 0V3M9 10v11M6 3v4.2M12 3v4.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 3c-1.6 0-2.7 1.9-2.7 4.2s1.1 4.2 2.7 6.3V21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-lightbulb" viewBox="0 0 24 24">
+<path d="M9.3 18h5.4M10.2 21h3.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6V16h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-quill" viewBox="0 0 24 24">
+<path d="M20 4c-5 0-12 3-13.5 12.5l-1.5 3 3-1.5C17 16.5 20 9.5 20 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M9 15c2-3 5-6 9-9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-glasses" viewBox="0 0 24 24">
+<circle cx="6.6" cy="14" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="17.4" cy="14" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M9.8 13.2h4.4M3 13l1.7-5.5A2 2 0 0 1 6.6 6h1M21 13l-1.7-5.5A2 2 0 0 0 17.4 6h-1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-child-book" viewBox="0 0 24 24">
+<path d="M4 5.5C4 4.7 4.7 4 6.5 4H12v14H6.5C4.7 18 4 17.3 4 16.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M20 5.5c0-.8-.7-1.5-2.5-1.5H12v14h5.5c1.8 0 2.5-.7 2.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M12 8.6l.7 1.4 1.5.2-1.1 1.1.3 1.5-1.4-.7-1.4.7.3-1.5-1.1-1.1 1.5-.2z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-people" viewBox="0 0 24 24">
+<circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="16.2" cy="9.6" r="2.3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<path d="M3.5 20c0-3.5 2.6-6 5.5-6s5.5 2.5 5.5 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M15.2 14.3c2.1.5 3.8 2.4 3.8 5.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-camera" viewBox="0 0 24 24">
+<rect x="3" y="7.5" width="18" height="12" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M8 7.5l1.3-2.2a1.4 1.4 0 0 1 1.2-.7h2.9a1.4 1.4 0 0 1 1.2.7L16 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="12" cy="13.6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</symbol>
+
+<symbol id="i-compass" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M14.8 9.2l-1.6 4.4-4.4 1.6 1.6-4.4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-mountain" viewBox="0 0 24 24">
+<path d="M3 18l5.3-9 3.1 4.9 1.9-2.9L20.5 18z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="17.3" cy="6.6" r="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/>
+</symbol>
+
+<symbol id="i-play-screen" viewBox="0 0 24 24">
+<rect x="3" y="5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M3 20h18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M10.3 9l4.4 3-4.4 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-calendar" viewBox="0 0 24 24">
+<rect x="4" y="5.5" width="16" height="14.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M4 9.5h16M8 3.5v4M16 3.5v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="8" y="12.6" width="2.2" height="2.2" fill="currentColor" stroke="none"/>
+<rect x="13.8" y="12.6" width="2.2" height="2.2" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="i-clock" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M12 7.5V12l3.2 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-chat" viewBox="0 0 24 24">
+<path d="M4 5h15a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-9l-4 3.3V17H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-send" viewBox="0 0 24 24">
+<path d="M3.5 11.5L20 4l-7.5 16.5-2.7-7.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M19.7 4.3L9.8 13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</symbol>
+
+<symbol id="i-check-circle" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M8.2 12.3l2.4 2.4 5.2-5.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-alert" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M12 8v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="i-mail" viewBox="0 0 24 24">
+<rect x="3.5" y="5.5" width="17" height="13" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<path d="M4.5 7l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-arrow-up" viewBox="0 0 24 24">
+<path d="M12 19V6M6.5 11.5L12 6l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-flag" viewBox="0 0 24 24">
+<path d="M6 3v18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M6 4h11l-2.4 3.5L17 11H6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="i-layers" viewBox="0 0 24 24">
+<path d="M12 3l8.5 4.5L12 12 3.5 7.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M3.5 12.5L12 17l8.5-4.5M3.5 16.8L12 21.3l8.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</symbol>
+
+</defs>
+</svg>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-mark"><svg class="ic"><use href="#i-book-stack"/></svg></div>
+      <div class="brand-text">
+        <strong data-kk="ҚКО · Көкшетау 2026" data-ru="КБС · Кокшетау 2026">ҚКО · Көкшетау 2026</strong>
+        <span data-kk="Көшпелі отырыс" data-ru="Выездное заседание">Көшпелі отырыс</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#program" data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</a>
+      <a class="nav-link" href="#feedback" data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</a>
+    </div>
+    <div class="nav-right">
+      <div class="seg" id="langSeg">
+        <div class="seg-pill"></div>
+        <button type="button" class="active" data-lang="kk">ҚАЗ</button>
+        <button type="button" data-lang="ru">РУС</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">
+          <svg class="ic"><use href="#i-sparkle"/></svg>
+          <span data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз (КБС)">Қазақстан Кітапханалар Одағы</span>
+        </div>
+        <h1 class="hero-title" data-kk="Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі" data-ru="Глобальный взгляд и устойчивое развитие: роль библиотек в формировании будущего">Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі</h1>
+        <p class="hero-sub" data-kk="Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы." data-ru="Программа очередного выездного заседания Казахстанского библиотечного союза (КБС). Акмолинская областная универсальная научная библиотека имени М. Жумабаева.">Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы.</p>
+        <div class="meta-chips">
+          <div class="chip">
+            <svg class="ic"><use href="#i-calendar"/></svg>
+            <div class="chip-text">
+              <b data-kk="26–27 маусым 2026" data-ru="26–27 июня 2026">26–27 маусым 2026</b>
+              <small data-kk="Жұма, сенбі" data-ru="Пятница, суббота">Жұма, сенбі</small>
+            </div>
+          </div>
+          <div class="chip">
+            <svg class="ic"><use href="#i-pin"/></svg>
+            <div class="chip-text">
+              <b data-kk="Көкшетау қ., Абай к-сі, 111" data-ru="г. Кокшетау, ул. Абая, 111">Көкшетау қ., Абай к-сі, 111</b>
+              <small data-kk="М. Жұмабаев атынд. кітапхана" data-ru="Библиотека им. М. Жумабаева">М. Жұмабаев атынд. кітапхана</small>
+            </div>
+          </div>
+          <div class="chip">
+            <svg class="ic"><use href="#i-clock"/></svg>
+            <div class="chip-text">
+              <b data-kk="Басталу — 10:00" data-ru="Начало — 10:00">Басталу — 10:00</b>
+              <small data-kk="Тіркеу — 08:00-ден" data-ru="Регистрация — с 08:00">Тіркеу — 08:00-ден</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="count-card">
+        <div class="count-label"><span class="dot"></span><span data-kk="Іс-шараның басталуына дейін" data-ru="До начала мероприятия">Іс-шараның басталуына дейін</span></div>
+        <div class="count-grid">
+          <div class="count-unit"><div class="count-num" id="cd-days">00</div><small data-kk="күн" data-ru="дн">күн</small></div>
+          <div class="count-unit"><div class="count-num" id="cd-hours">00</div><small data-kk="сағ" data-ru="ч">сағ</small></div>
+          <div class="count-unit"><div class="count-num" id="cd-mins">00</div><small data-kk="мин" data-ru="мин">мин</small></div>
+          <div class="count-unit"><div class="count-num" id="cd-secs">00</div><small data-kk="сек" data-ru="сек">сек</small></div>
+        </div>
+        <div class="count-status" id="cd-status"></div>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+<!-- ============================================================
+     PROGRAM
+     ============================================================ -->
+<main class="wrap" id="program">
+
+  <div class="sec-head">
+    <div>
+      <p class="sec-eyebrow" data-kk="Іс-шара бағдарламасы" data-ru="Программа мероприятия">Іс-шара бағдарламасы</p>
+      <h2 class="sec-title" data-kk="Екі күндік бағдарлама" data-ru="Программа на два дня">Екі күндік бағдарлама</h2>
+    </div>
+    <p class="sec-note" data-kk="Барлық уақыт Қазақстан уақыты бойынша (GMT+5) көрсетілген." data-ru="Всё время указано по времени Казахстана (GMT+5).">Барлық уақыт Қазақстан уақыты бойынша (GMT+5) көрсетілген.</p>
+  </div>
+
+  <div class="day-tabs-wrap">
+    <div class="day-tabs" id="dayTabs" data-active="1">
+      <div class="pill"></div>
+      <button class="day-tab active" data-day="1" type="button">
+        <b data-kk="26 маусым" data-ru="26 июня">26 маусым</b>
+        <span data-kk="жұма · отырыс күні" data-ru="пятница · день заседания">жұма · отырыс күні</span>
+      </button>
+      <button class="day-tab" data-day="2" type="button">
+        <b data-kk="27 маусым" data-ru="27 июня">27 маусым</b>
+        <span data-kk="сенбі · экскурсия" data-ru="суббота · экскурсия">сенбі · экскурсия</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================== DAY 1 ===================== -->
+  <div class="day-panel active" id="day1">
+
+    <div class="group" data-start="2026-06-26T08:00:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+      <div class="group-head">
+        <svg class="ic"><use href="#i-flag"/></svg>
+        <h3 data-kk="Көшпелі жұмыс отырысының ресми ашылуы" data-ru="Официальное открытие выездного рабочего заседания">Көшпелі жұмыс отырысының ресми ашылуы</h3>
+      </div>
+
+      <div class="row" data-start="2026-06-26T08:00:00+05:00" data-end="2026-06-26T10:00:00+05:00">
+        <div class="row-time">
+          <span class="t">08:00–10:00</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-check-person"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Тіркеу" data-ru="Регистрация участников">Тіркеу</h4>
+          <div class="venue">
+            <svg class="ic"><use href="#i-pin"/></svg>
+            <span data-kk="М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Акмолинская областная универсальная научная библиотека имени М. Жумабаева">М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:00:00+05:00" data-end="2026-06-26T10:15:00+05:00">
+        <div class="row-time">
+          <span class="t">10:00–10:15</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Құттықтау сөз" data-ru="Приветственное слово">Құттықтау сөз</h4>
+          <div class="person">
+            <svg class="ic"><use href="#i-people"/></svg>
+            <span data-kk="ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитеті, Ақмола облысының Әкімдігі, Ақмола облыстық Мәдениет басқармасы" data-ru="Комитет по делам архивов, документации и книгоиздания Министерства культуры и информации РК, Акимат Акмолинской области, Управление культуры Акмолинской области">ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитеті, Ақмола облысының Әкімдігі, Ақмола облыстық Мәдениет басқармасы</span>
+          </div>
+          <div class="person">
+            <svg class="ic"><use href="#i-check-person"/></svg>
+            <span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза, Заслуженный деятель Казахстана, член Союза писателей Казахстана">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+        <div class="row-time">
+          <span class="t">10:15–10:30</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-gift"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Мерейтойлармен құттықтау. Кітапхана басшылары" data-ru="Поздравление юбиляров. Руководители библиотек">Мерейтойлармен құттықтау. Кітапхана басшылары</h4>
+          <div class="person">
+            <svg class="ic"><use href="#i-mail"/></svg>
+            <span data-kk="ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау" data-ru="Вручение поздравительного письма вице-министра культуры и информации РК Рустама Али">ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау</span>
+          </div>
+          <ul class="sub-list">
+            <li data-kk="Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)" data-ru="Измуханбетова Сара Салахединовна – 60 лет (директор Атырауской областной научной универсальной библиотеки имени Г. Сланова, 27.06.1966 г.)">Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)</li>
+            <li data-kk="Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)" data-ru="Бектембаев Мейрам Еркенович – 50 лет (директор Централизованной библиотечной системы города Алматы, 17.11.1976 г.)">Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+        <div class="row-time">
+          <span class="t">10:15–10:30</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-medal"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Кітапхана саласының үздік мамандарын марапаттау" data-ru="Награждение лучших специалистов библиотечной отрасли">Кітапхана саласының үздік мамандарын марапаттау</h4>
+          <div class="person">
+            <svg class="ic"><use href="#i-medal"/></svg>
+            <span data-kk="«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары" data-ru="Звания «Почётный библиотекарь Казахстана», «Лучший по профессии», «Ветеран библиотечного дела»">«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары</span>
+          </div>
+          <div class="person">
+            <svg class="ic"><use href="#i-mail"/></svg>
+            <span data-kk="ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау" data-ru="Вручение нагрудных знаков Национальной библиотеки РК и Казахстанского библиотечного союза">ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+        <div class="row-time">
+          <span class="t">10:15–10:30</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-book-stack"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Кітапханалар мерейтойларымен құттықтау" data-ru="Поздравление с юбилеями библиотек">Кітапханалар мерейтойларымен құттықтау</h4>
+          <div class="person">
+            <svg class="ic"><use href="#i-mail"/></svg>
+            <span data-kk="Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау" data-ru="Вручение сертификатов книжных издательств от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау</span>
+          </div>
+          <ul class="sub-list">
+            <li data-kk="М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл" data-ru="Акмолинской областной универсальной научной библиотеке имени М. Жумабаева — 80 лет">М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл</li>
+            <li data-kk="Атырау облыстық балалар кітапханасына — 60 жыл" data-ru="Атырауской областной детской библиотеке — 60 лет">Атырау облыстық балалар кітапханасына — 60 жыл</li>
+            <li data-kk="Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл" data-ru="Карагандинской областной библиотеке для подростков имени Ж. Бектурова — 50 лет">Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл</li>
+            <li data-kk="Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл" data-ru="Городской библиотеке для подростков имени Жамбыла — 50 лет">Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл</li>
+            <li data-kk="Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл" data-ru="Туркестанской областной универсальной научной библиотеке «Фараби» — 5 лет">Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+        <div class="row-time">
+          <span class="t">10:15–10:30</span>
+          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+        </div>
+        <div class="row-icon"><svg class="ic"><use href="#i-trophy"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары" data-ru="Региональным библиотекам: номинации «Лучшее мероприятие», «Генератор идей»">Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары</h4>
+          <div class="person">
+            <svg class="ic"><use href="#i-calendar"/></svg>
+            <span data-kk="«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды" data-ru="Определены по итогам недели «Библиотекарь года – 2026», организованной в рамках Национального дня книги">«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды</span>
+          </div>
+          <div class="person">
+            <svg class="ic"><use href="#i-mail"/></svg>
+            <span data-kk="Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау" data-ru="Вручение сертификатов на онлайн-курс обучения ИИ «ONYX AI AGENCY» от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group" data-start="2026-06-26T10:30:00+05:00" data-end="2026-06-26T12:40:00+05:00">
+      <div class="group-head">
+        <svg class="ic"><use href="#i-podium"/></svg>
+        <h3 data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</h3>
+      </div>
+
+      <div class="row" data-start="2026-06-26T10:30:00+05:00" data-end="2026-06-26T11:00:00+05:00">
+        <div class="row-time"><span class="t">10:30–11:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру" data-ru="Направления развития Казахстанского библиотечного союза. Презентация сайта КБС">Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T11:00:00+05:00" data-end="2026-06-26T11:20:00+05:00">
+        <div class="row-time"><span class="t">11:00–11:20</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-scroll"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="«Кітапхана және баспа ісі туралы» Заң жобасы" data-ru="Законопроект «О библиотечном деле и книгоиздании»">«Кітапхана және баспа ісі туралы» Заң жобасы</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры" data-ru="Сейтова К.К., директор Национальной академической библиотеки РК">Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T11:20:00+05:00" data-end="2026-06-26T11:40:00+05:00">
+        <div class="row-time"><span class="t">11:20–11:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-book"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы" data-ru="Значение учебников на казахском языке для развития библиотечной науки">Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы" data-ru="Алтынбек К.М., учёный секретарь Национальной библиотеки РК">Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T11:40:00+05:00" data-end="2026-06-26T12:00:00+05:00">
+        <div class="row-time"><span class="t">11:40–12:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-checklist"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Библиографиялық сипаттаудың жаңа Ұлттық стандарты" data-ru="Новый национальный стандарт библиографического описания">Библиографиялық сипаттаудың жаңа Ұлттық стандарты</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов Национальной библиотеки РК">Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T12:00:00+05:00" data-end="2026-06-26T12:15:00+05:00">
+        <div class="row-time"><span class="t">12:00–12:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-cloud-doc"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Электронды құжаттарды тіркеу және есепке алу" data-ru="Регистрация и учёт электронных документов">Электронды құжаттарды тіркеу және есепке алу</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі" data-ru="Смагулова Г.Б., руководитель службы комплектования фонда Национальной библиотеки РК">Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T12:15:00+05:00" data-end="2026-06-26T12:30:00+05:00">
+        <div class="row-time"><span class="t">12:15–12:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="ЖИ және кітапхана: жаңа кезеңнің қалыптасуы" data-ru="ИИ и библиотека: формирование новой эпохи">ЖИ және кітапхана: жаңа кезеңнің қалыптасуы</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы Национальной библиотеки РК, AI creator">Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
+        </div>
+      </div>
+
+      <div class="row" data-start="2026-06-26T12:30:00+05:00" data-end="2026-06-26T12:40:00+05:00">
+        <div class="row-time"><span class="t">12:30–12:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-pin"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары" data-ru="Публичные библиотеки Акмолинской области: состояние и направления развития">Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары</h4>
+          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры" data-ru="Оспан К.Е., директор Акмолинской областной универсальной научной библиотеки имени М. Жумабаева">Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" data-start="2026-06-26T12:40:00+05:00" data-end="2026-06-26T14:00:00+05:00">
+      <div class="row-icon"><svg class="ic"><use href="#i-cutlery"/></svg></div>
+      <div class="banner-text">
+        <b data-kk="Түскі үзіліс" data-ru="Обеденный перерыв">Түскі үзіліс</b>
+        <span data-kk="Семинарлар алдындағы демалыс" data-ru="Перерыв перед семинарами">Семинарлар алдындағы демалыс</span>
+      </div>
+      <div class="banner-time">12:40–14:00</div>
+    </div>
+
+    <div class="sec-head" style="margin-bottom:14px;">
+      <div>
+        <p class="sec-eyebrow" data-kk="Параллель форматтар" data-ru="Параллельный формат">Параллель форматтар</p>
+        <h2 class="sec-title" data-kk="Оқыту семинарлары мен шеберлік сағаттар" data-ru="Обучающие семинары и мастер-классы">Оқыту семинарлары мен шеберлік сағаттар</h2>
+      </div>
+    </div>
+    <div class="parallel-note">
+      <svg class="ic"><use href="#i-layers"/></svg>
+      <span data-kk="14:00–16:30 аралығында үш локацияда қатарлас өтеді" data-ru="Проходят параллельно на трёх локациях с 14:00 до 16:30">14:00–16:30 аралығында үш локацияда қатарлас өтеді</span>
+    </div>
+
+    <div class="loc-grid">
+      <!-- LOCATION 1 -->
+      <div class="loc-col">
+        <div class="loc-head">
+          <div class="loc-badge">1</div>
+          <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы" data-ru="Библиотека им. М. Жумабаева. Зал заседаний им. С.С. Жунисова">М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы</b></div>
+        </div>
+        <div class="group">
+          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T14:30:00+05:00">
+            <div class="row-time"><span class="t">14:00–14:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Интеллектуалды кітапхана: ЖИ-технологиялар" data-ru="Интеллектуальная библиотека: ИИ-технологии">Интеллектуалды кітапхана: ЖИ-технологиялар</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов НБ РК">Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі</span></div>
+            </div>
+          </div>
+          <div class="row" data-start="2026-06-26T14:30:00+05:00" data-end="2026-06-26T14:45:00+05:00">
+            <div class="row-time"><span class="t">14:30–14:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-lightbulb"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде" data-ru="Библиотеки как платформа формирования интеллектуальной нации">Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі" data-ru="Бекмуханбет А.К., руководитель группы научно-методической службы НБ РК">Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі</span></div>
+            </div>
+          </div>
+          <div class="row" data-start="2026-06-26T14:45:00+05:00" data-end="2026-06-26T15:15:00+05:00">
+            <div class="row-time"><span class="t">14:45–15:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-quill"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері" data-ru="От данных к живому сюжету: искусство сторителлинга с ИИ">Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы НБ РК, AI creator">Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
+            </div>
+          </div>
+          <div class="row" data-start="2026-06-26T15:15:00+05:00" data-end="2026-06-26T15:45:00+05:00">
+            <div class="row-time"><span class="t">15:15–15:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-glasses"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак" data-ru="Как нужно читать книгу? Казахский лайфхак столетней давности">Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері" data-ru="Билял Е., сотрудник службы редких книг и рукописей НБ РК">Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері</span></div>
+            </div>
+          </div>
+          <div class="row" data-start="2026-06-26T15:45:00+05:00" data-end="2026-06-26T16:30:00+05:00">
+            <div class="row-time"><span class="t">15:45–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық" data-ru="Диалоговая площадка руководителей. Подготовка к 90-му конгрессу WLIC ИФЛА">Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель КБС">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы</span></div>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары" data-ru="Жолдыбалинов Н.Н., заместитель директора Национальной академической библиотеки РК, заместитель председателя КБС">Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCATION 2 -->
+      <div class="loc-col">
+        <div class="loc-head">
+          <div class="loc-badge">2</div>
+          <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы" data-ru="Библиотека им. М. Жумабаева. Зал детской литературы">М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы</b></div>
+        </div>
+        <div class="group">
+          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T16:30:00+05:00">
+            <div class="row-time"><span class="t">14:00–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-child-book"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер" data-ru="Детская библиотека: новое содержание, новый формат, новые возможности">Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары" data-ru="Жакупова А.Б., заместитель директора Национальной академической библиотеки РК">Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары</span></div>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры" data-ru="Уатаева Б.К., директор Карагандинской областной детской библиотеки имени Абая">Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCATION 3 -->
+      <div class="loc-col">
+        <div class="loc-head">
+          <div class="loc-badge">3</div>
+          <div class="loc-head-text"><b data-kk="Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы" data-ru="Городская информационная библиотечная система. Казахская городская образцовая библиотека">Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы</b></div>
+        </div>
+        <div class="group">
+          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T15:00:00+05:00">
+            <div class="row-time"><span class="t">14:00–15:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Баспасөз және қоғаммен байланыс" data-ru="Пресса и связи с общественностью">Баспасөз және қоғаммен байланыс</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі" data-ru="Урманбеков Т.Н., руководитель службы информации и коммуникаций НБ РК">Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі</span></div>
+            </div>
+          </div>
+          <div class="row" data-start="2026-06-26T15:00:00+05:00" data-end="2026-06-26T16:00:00+05:00">
+            <div class="row-time"><span class="t">15:00–16:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+            <div class="row-icon"><svg class="ic"><use href="#i-people"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Жас кітапханашылар ұйымының ІІ жұмыс отырысы" data-ru="II рабочее заседание организации молодых библиотекарей">Жас кітапханашылар ұйымының ІІ жұмыс отырысы</h4>
+              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі" data-ru="Кабдрашидов Е.С., руководитель группы издательской службы НБ РК">Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== DAY 2 ===================== -->
+  <div class="day-panel" id="day2">
+    <div class="sec-head" style="margin-bottom:14px;">
+      <div>
+        <p class="sec-eyebrow" data-kk="Мәдени бағдарлама" data-ru="Культурная программа">Мәдени бағдарлама</p>
+        <h2 class="sec-title" data-kk="Мәдени-тарихи экскурсия" data-ru="Культурно-историческая экскурсия">Мәдени-тарихи экскурсия</h2>
+      </div>
+    </div>
+
+    <div class="group" data-start="2026-06-27T10:00:00+05:00" data-end="2026-06-27T17:00:00+05:00">
+      <div class="group-head">
+        <svg class="ic"><use href="#i-mountain"/></svg>
+        <h3 data-kk="Бурабай — Оқжетпес бағыты" data-ru="Маршрут Бурабай — Окжетпес">Бурабай — Оқжетпес бағыты</h3>
+      </div>
+
+      <div class="row" data-start="2026-06-27T10:00:00+05:00" data-end="2026-06-27T17:00:00+05:00">
+        <div class="row-time"><span class="t">10:00–17:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+        <div class="row-icon"><svg class="ic"><use href="#i-camera"/></svg></div>
+        <div class="row-body">
+          <h4 data-kk="Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия" data-ru="Экскурсия в этнографический музей под открытым небом «Ботай-Бурабай»">Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия</h4>
+          <div class="venue"><svg class="ic"><use href="#i-pin"/></svg><span data-kk="Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Место сбора: Акмолинская областная универсальная научная библиотека им. М. Жумабаева">Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span></div>
+          <ul class="sub-list">
+            <li data-kk="«Оқжетпес қиясында» тимбилдинг" data-ru="Тимбилдинг на скале «Окжетпес»">«Оқжетпес қиясында» тимбилдинг</li>
+            <li data-kk="Мәдени-танымдық іс-шаралар" data-ru="Культурно-познавательные мероприятия">Мәдени-танымдық іс-шаралар</li>
+            <li data-kk="«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия" data-ru="Экскурсия в мультимедийный интерактивный комплекс национального парка «Бурабай»">«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="loc-grid" style="margin-top:6px;">
+      <div class="loc-col">
+        <div class="group" style="margin-bottom:0;">
+          <div class="row" style="grid-template-columns:44px 1fr;">
+            <div class="row-icon"><svg class="ic"><use href="#i-compass"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Оқжетпес қиясы" data-ru="Скала Окжетпес">Оқжетпес қиясы</h4>
+              <div class="person" style="margin-top:7px;"><span data-kk="Топ жұмысы мен тимбилдинг форматындағы белсенді белсенді демалыс." data-ru="Тимбилдинг и активный отдых в формате командной работы.">Топ жұмысы мен тимбилдинг форматындағы белсенді демалыс.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loc-col">
+        <div class="group" style="margin-bottom:0;">
+          <div class="row" style="grid-template-columns:44px 1fr;">
+            <div class="row-icon"><svg class="ic"><use href="#i-play-screen"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="«Бурабай» интерактивті кешені" data-ru="Интерактивный комплекс «Бурабай»">«Бурабай» интерактивті кешені</h4>
+              <div class="person" style="margin-top:7px;"><span data-kk="Ұлттық парктің мультимедиялық экспозициясымен танысу." data-ru="Знакомство с мультимедийной экспозицией национального парка.">Ұлттық парктің мультимедиялық экспозициясымен танысу.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loc-col">
+        <div class="group" style="margin-bottom:0;">
+          <div class="row" style="grid-template-columns:44px 1fr;">
+            <div class="row-icon"><svg class="ic"><use href="#i-mountain"/></svg></div>
+            <div class="row-body">
+              <h4 data-kk="Ботай-Бурабай музейі" data-ru="Музей «Ботай-Бурабай»">Ботай-Бурабай музейі</h4>
+              <div class="person" style="margin-top:7px;"><span data-kk="Ашық аспан астындағы этнографиялық экспонаттар." data-ru="Этнографические экспонаты под открытым небом.">Ашық аспан астындағы этнографиялық экспонаттар.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     FEEDBACK
+     ============================================================ -->
+<section class="wrap" id="feedback" style="margin-top:60px;">
+  <div class="feedback-card">
+    <div class="fb-grid">
+      <div class="fb-left">
+        <svg class="ic-lg" style="color:var(--teal); margin-bottom:14px;"><use href="#i-chat"/></svg>
+        <h2 data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</h2>
+        <p data-kk="Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымдастырушыға жетеді." data-ru="Оставьте свои тёплые пожелания и отзыв по каждому дню и разделу программы. Сообщение напрямую поступит организатору.">Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымдастырушыға жетеді.</p>
+        <ul class="fb-points">
+          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі" data-ru="Ваши отзывы помогают улучшить качество заседания">Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі</span></li>
+          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес" data-ru="Достаточно указать имя и отзыв, другие данные не требуются">Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес</span></li>
+          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі" data-ru="Сообщение автоматически отправляется на e-mail организатора">Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі</span></li>
+        </ul>
+        <a class="fb-contact" href="mailto:ionurlykhans@gmail.com">
+          <svg class="ic"><use href="#i-mail"/></svg>
+          <span>ionurlykhans@gmail.com</span>
+        </a>
+      </div>
+
+      <div>
+        <form id="fbForm" action="https://formsubmit.co/ajax/ionurlykhans@gmail.com" method="POST">
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="ҚКО Көкшетау 2026 — жаңа пікір / Новый отзыв">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="field">
+            <label data-kk="Аты-жөніңіз" data-ru="Ваше имя">Аты-жөніңіз</label>
+            <input type="text" name="name" id="fbName" required data-kk-ph="Мысалы: Айгерім Болатова" data-ru-ph="Например: Айгерим Болатова" placeholder="Мысалы: Айгерім Болатова">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label data-kk="Күн" data-ru="День">Күн</label>
+              <select name="day" id="fbDay">
+                <option value="day1" data-kk="26 маусым, жұма" data-ru="26 июня, пятница">26 маусым, жұма</option>
+                <option value="day2" data-kk="27 маусым, сенбі" data-ru="27 июня, суббота">27 маусым, сенбі</option>
+                <option value="both" data-kk="Екі күнге де" data-ru="На оба дня">Екі күнге де</option>
+              </select>
+            </div>
+            <div class="field">
+              <label data-kk="Бөлім" data-ru="Раздел">Бөлім</label>
+              <select name="section" id="fbSection">
+                <option value="general" data-kk="Жалпы бағдарлама" data-ru="Общая программа">Жалпы бағдарлама</option>
+                <option value="opening" data-kk="Ашылу салтанаты" data-ru="Открытие заседания">Ашылу салтанаты</option>
+                <option value="plenary" data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</option>
+                <option value="loc1" data-kk="1-локация: семинарлар" data-ru="Локация 1: семинары">1-локация: семинарлар</option>
+                <option value="loc2" data-kk="2-локация: Балалар кітапханасы" data-ru="Локация 2: Детская библиотека">2-локация: Балалар кітапханасы</option>
+                <option value="loc3" data-kk="3-локация: БАҺ және жас мамандар" data-ru="Локация 3: ПР и молодые специалисты">3-локация: БАҺ және жас мамандар</option>
+                <option value="excursion" data-kk="Экскурсиялық күн (27 маусым)" data-ru="Экскурсионный день (27 июня)">Экскурсиялық күн (27 маусым)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label data-kk="Жылы лебізіңіз мен пікіріңіз" data-ru="Ваши тёплые пожелания и отзыв">Жылы лебізіңіз мен пікіріңіз</label>
+            <textarea name="message" id="fbMessage" required data-kk-ph="Пікіріңізді осында жазыңыз…" data-ru-ph="Напишите свой отзыв здесь…" placeholder="Пікіріңізді осында жазыңыз…"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="fbSubmit">
+            <svg class="ic"><use href="#i-send"/></svg>
+            <span data-kk="Жіберу" data-ru="Отправить">Жіберу</span>
+          </button>
+
+          <div class="form-msg" id="fbMsg"></div>
+          <a class="mailto-fallback" id="fbMailto" href="#"><svg class="ic"><use href="#i-mail"/></svg><span data-kk="Email арқылы тікелей жіберу" data-ru="Отправить письмом напрямую">Email арқылы тікелей жіберу</span></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-org">
+        <svg class="ic-lg" style="color:var(--teal);"><use href="#i-book-stack"/></svg>
+        <div>
+          <b data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз">Қазақстан Кітапханалар Одағы</b>
+          <span data-kk="Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026" data-ru="г. Кокшетау, ул. Абая, 111 · 26–27 июня 2026">Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#program"><svg class="ic"><use href="#i-calendar"/></svg><span data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</span></a>
+        <a href="#feedback"><svg class="ic"><use href="#i-chat"/></svg><span data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</span></a>
+        <a href="mailto:ionurlykhans@gmail.com"><svg class="ic"><use href="#i-mail"/></svg><span>ionurlykhans@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="signature">
+      <p><b data-kk="Сайтты жасаған Нұрлыхан Қасымханұлы" data-ru="Сайт разработал Нурлыхан Касымханулы">Сайтты жасаған Нұрлыхан Қасымханұлы</b><br>
+      <span data-kk="ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі" data-ru="Национальная библиотека РК, Научно-методическая служба">ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі</span></p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="top"><svg class="ic"><use href="#i-arrow-up"/></svg></button>
+
+<script>
+(function(){
+  "use strict";
+
+  var DYN = {
+    kk:{ upcoming:"Жақында", live:"Қазір", done:"Өтті",
+         eventLive:"Отырыс қазір өтіп жатыр", eventDay2:"Бүгін — экскурсия күні",
+         eventDone:"Отырыс аяқталды. Рахмет!",
+         sending:"Жіберіліп жатыр…", sentOk:"Рахмет! Пікіріңіз ұйымдастырушыға жіберілді.",
+         sentFail:"Жіберілмеді. Төмендегі сілтеме арқылы тікелей хатпен жіберіп көріңіз.",
+         fillRequired:"Аты-жөніңізді және пікіріңізді жазыңыз." },
+    ru:{ upcoming:"Скоро", live:"Сейчас", done:"Прошло",
+         eventLive:"Заседание идёт прямо сейчас", eventDay2:"Сегодня — день экскурсии",
+         eventDone:"Заседание завершено. Спасибо!",
+         sending:"Отправка…", sentOk:"Спасибо! Ваш отзыв отправлен организатору.",
+         sentFail:"Не удалось отправить. Попробуйте отправить письмом напрямую по ссылке ниже.",
+         fillRequired:"Пожалуйста, укажите имя и отзыв." }
+  };
+
+  var lang = "kk";
+
+  function applyLang(l){
+    lang = l;
+    document.documentElement.lang = l;
+    document.body.classList.toggle("lang-ru", l === "ru");
+    document.body.classList.toggle("lang-kk", l === "kk");
+
+    document.querySelectorAll("[data-kk]").forEach(function(el){
+      var v = el.getAttribute("data-" + l);
+      if (v !== null) el.textContent = v;
+    });
+    document.querySelectorAll("[data-kk-ph]").forEach(function(el){
+      var v = el.getAttribute("data-" + l + "-ph");
+      if (v !== null) el.placeholder = v;
+    });
+
+    document.getElementById("langSeg").querySelectorAll("button").forEach(function(b){
+      b.classList.toggle("active", b.dataset.lang === l);
+    });
+
+    refreshStatuses();
+  }
+
+  document.getElementById("langSeg").addEventListener("click", function(e){
+    var btn = e.target.closest("button[data-lang]");
+    if (!btn) return;
+    applyLang(btn.dataset.lang);
+  });
+
+  /* ---------------- Day tabs ---------------- */
+  var dayTabs = document.getElementById("dayTabs");
+  dayTabs.addEventListener("click", function(e){
+    var btn = e.target.closest(".day-tab");
+    if (!btn) return;
+    var d = btn.dataset.day;
+    dayTabs.setAttribute("data-active", d);
+    dayTabs.querySelectorAll(".day-tab").forEach(function(t){ t.classList.toggle("active", t === btn); });
+    document.getElementById("day1").classList.toggle("active", d === "1");
+    document.getElementById("day2").classList.toggle("active", d === "2");
+  });
+
+  /* ---------------- Countdown ---------------- */
+  var EVENT_START = new Date("2026-06-26T10:00:00+05:00");
+  var EVENT_DAY2_START = new Date("2026-06-27T00:00:00+05:00");
+  var EVENT_END = new Date("2026-06-27T17:00:00+05:00");
+
+  function pad(n){ return String(n).padStart(2,"0"); }
+
+  function tickCountdown(){
+    var now = new Date();
+    var statusEl = document.getElementById("cd-status");
+    var diff = EVENT_START - now;
+
+    if (diff > 0){
+      var s = Math.floor(diff/1000);
+      var days = Math.floor(s/86400); s -= days*86400;
+      var hours = Math.floor(s/3600); s -= hours*3600;
+      var mins = Math.floor(s/60); s -= mins*60;
+      var secs = s;
+      document.getElementById("cd-days").textContent = pad(days);
+      document.getElementById("cd-hours").textContent = pad(hours);
+      document.getElementById("cd-mins").textContent = pad(mins);
+      document.getElementById("cd-secs").textContent = pad(secs);
+      statusEl.textContent = "";
+    } else if (now < EVENT_END){
+      document.getElementById("cd-days").textContent = "00";
+      document.getElementById("cd-hours").textContent = "00";
+      document.getElementById("cd-mins").textContent = "00";
+      document.getElementById("cd-secs").textContent = "00";
+      statusEl.textContent = (now >= EVENT_DAY2_START) ? DYN[lang].eventDay2 : DYN[lang].eventLive;
+    } else {
+      document.getElementById("cd-days").textContent = "00";
+      document.getElementById("cd-hours").textContent = "00";
+      document.getElementById("cd-mins").textContent = "00";
+      document.getElementById("cd-secs").textContent = "00";
+      statusEl.textContent = DYN[lang].eventDone;
+    }
+  }
+
+  /* ---------------- Session status pills ---------------- */
+  function refreshStatuses(){
+    var now = new Date();
+    document.querySelectorAll(".row[data-start]").forEach(function(row){
+      var start = new Date(row.getAttribute("data-start"));
+      var end = new Date(row.getAttribute("data-end"));
+      var pill = row.querySelector(".status-pill");
+      if (!pill) return;
+      var textEl = pill.querySelector(".s-text");
+      var cls = "upcoming", txt = DYN[lang].upcoming;
+      if (now >= start && now <= end){ cls = "live"; txt = DYN[lang].live; }
+      else if (now > end){ cls = "done"; txt = DYN[lang].done; }
+      pill.classList.remove("upcoming","live","done");
+      pill.classList.add(cls);
+      textEl.textContent = txt;
+    });
+  }
+
+  setInterval(function(){ tickCountdown(); refreshStatuses(); }, 1000);
+  tickCountdown();
+  refreshStatuses();
+
+  /* ---------------- Scroll reveal ---------------- */
+  var revealEls = document.querySelectorAll(".group, .banner");
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("in-view"); io.unobserve(en.target); }
+      });
+    }, {threshold:0.08, rootMargin:"0px 0px -40px 0px"});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("in-view"); });
+  }
+
+  /* ---------------- Back to top ---------------- */
+  var toTop = document.getElementById("toTop");
+  window.addEventListener("scroll", function(){
+    toTop.classList.toggle("show", window.scrollY > 480);
+  });
+  toTop.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+
+  /* ---------------- Feedback form ---------------- */
+  var form = document.getElementById("fbForm");
+  var msg = document.getElementById("fbMsg");
+  var submitBtn = document.getElementById("fbSubmit");
+  var mailtoLink = document.getElementById("fbMailto");
+
+  function buildMailto(){
+    var name = document.getElementById("fbName").value || "";
+    var day = document.getElementById("fbDay").selectedOptions[0].textContent;
+    var section = document.getElementById("fbSection").selectedOptions[0].textContent;
+    var message = document.getElementById("fbMessage").value || "";
+    var subject = encodeURIComponent("ҚКО Көкшетау 2026 — пікір / отзыв");
+    var body = encodeURIComponent(
+      (lang === "ru" ? "Имя: " : "Аты-жөні: ") + name + "\n" +
+      (lang === "ru" ? "День: " : "Күн: ") + day + "\n" +
+      (lang === "ru" ? "Раздел: " : "Бөлім: ") + section + "\n\n" + message
+    );
+    return "mailto:ionurlykhans@gmail.com?subject=" + subject + "&body=" + body;
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("fbName").value.trim();
+    var message = document.getElementById("fbMessage").value.trim();
+    msg.className = "form-msg";
+    mailtoLink.classList.remove("show");
+
+    if (!name || !message){
+      msg.innerHTML = '<svg class="ic"><use href="#i-alert"/></svg><span>' + DYN[lang].fillRequired + '</span>';
+      msg.classList.add("show","err");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    var origLabel = submitBtn.querySelector("span").textContent;
+    submitBtn.querySelector("span").textContent = DYN[lang].sending;
+
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+      method:"POST",
+      headers:{ "Accept":"application/json" },
+      body:formData
+    }).then(function(res){
+      if (!res.ok) throw new Error("network");
+      return res.json().catch(function(){ return {}; });
+    }).then(function(){
+      msg.innerHTML = '<svg class="ic"><use href="#i-check-circle"/></svg><span>' + DYN[lang].sentOk + '</span>';
+      msg.classList.add("show","ok");
+      form.reset();
+    }).catch(function(){
+      msg.innerHTML = '<svg class="ic"><use href="#i-alert"/></svg><span>' + DYN[lang].sentFail + '</span>';
+      msg.classList.add("show","err");
+      mailtoLink.href = buildMailto();
+      mailtoLink.classList.add("show");
+    }).finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.querySelector("span").textContent = origLabel;
+    });
+  });
+
+  /* keep mailto fallback always up to date if user clicks it directly */
+  mailtoLink.addEventListener("click", function(){ mailtoLink.href = buildMailto(); });
+
+})();
+</script>
+
+</body>
+</html>
