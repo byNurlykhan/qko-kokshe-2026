@@ -14,28 +14,28 @@
    TOKENS
    ============================================================ */
 :root{
-  --teal:#64C8BD;
-  --deep:#094A6F;
-  --deep-2:#073d5c;
-  --white:#FFFFFF;
-  --glass:rgba(255,255,255,0.10);
-  --glass-strong:rgba(255,255,255,0.18);
-  --glass-soft:rgba(255,255,255,0.07);
-  --border:rgba(255,255,255,0.30);
-  --border-soft:rgba(255,255,255,0.16);
-  --ink:#FFFFFF;
-  --ink-2:rgba(255,255,255,0.78);
-  --ink-3:rgba(255,255,255,0.54);
-  --divider:rgba(255,255,255,0.14);
-  --gold:#F3C677;
-  --live:#3DDC84;
-  --radius-xl:30px;
-  --radius-lg:24px;
-  --radius-md:18px;
-  --radius-sm:12px;
-  --shadow:0 24px 70px -28px rgba(2,16,24,0.55);
-  --ease:cubic-bezier(.22,1,.36,1);
-  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+ --teal:#64C8BD;
+ --deep:#094A6F;
+ --deep-2:#073d5c;
+ --white:#FFFFFF;
+ --glass:rgba(255,255,255,0.10);
+ --glass-strong:rgba(255,255,255,0.18);
+ --glass-soft:rgba(255,255,255,0.07);
+ --border:rgba(255,255,255,0.30);
+ --border-soft:rgba(255,255,255,0.16);
+ --ink:#FFFFFF;
+ --ink-2:rgba(255,255,255,0.78);
+ --ink-3:rgba(255,255,255,0.54);
+ --divider:rgba(255,255,255,0.14);
+ --gold:#F3C677;
+ --live:#3DDC84;
+ --radius-xl:30px;
+ --radius-lg:24px;
+ --radius-md:18px;
+ --radius-sm:12px;
+ --shadow:0 24px 70px -28px rgba(2,16,24,0.55);
+ --ease:cubic-bezier(.22,1,.36,1);
+ --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
 
 *{box-sizing:border-box;}
@@ -78,11 +78,11 @@ section{position:relative;}
    NAV
    ============================================================ */
 .nav{
-  position:sticky; top:0; z-index:60;
-  backdrop-filter:blur(18px) saturate(160%);
-  -webkit-backdrop-filter:blur(18px) saturate(160%);
-  background:rgba(8,58,86,0.42);
-  border-bottom:1px solid var(--border-soft);
+ position:sticky; top:0; z-index:60;
+ backdrop-filter:blur(18px) saturate(160%);
+ -webkit-backdrop-filter:blur(18px) saturate(160%);
+ background:rgba(8,58,86,0.42);
+ border-bottom:1px solid var(--border-soft);
 }
 .nav-inner{
   max-width:1180px;margin:0 auto;padding:14px 24px;
@@ -135,7 +135,8 @@ body.lang-ru #langSeg .seg-pill{transform:translateX(100%);}
    ============================================================ */
 .hero{padding:64px 0 40px; overflow:hidden;}
 .hero-grid{
-  display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:end; position:relative; z-index:2;
+  display:grid; grid-template-columns:1.3fr 1fr; gap:48px;
+  align-items:end; position:relative; z-index:2;
 }
 .eyebrow{
   display:inline-flex; align-items:center; gap:8px;
@@ -430,9 +431,6 @@ form#fbForm{display:flex; flex-direction:column; gap:14px;}
 </head>
 <body class="lang-kk">
 
-<!-- ============================================================
-     ICON SPRITE
-     ============================================================ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <g id="ic-stroke-defaults" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -627,593 +625,583 @@ form#fbForm{display:flex; flex-direction:column; gap:14px;}
 </defs>
 </svg>
 
-<!-- ============================================================
-     NAV
-     ============================================================ -->
 <nav class="nav">
   <div class="nav-inner">
     <div class="brand">
-      <div class="brand-mark"><svg class="ic"><use href="#i-book-stack"/></svg></div>
-      <div class="brand-text">
-        <strong data-kk="ҚКО · Көкшетау 2026" data-ru="КБС · Кокшетау 2026">ҚКО · Көкшетау 2026</strong>
-        <span data-kk="Көшпелі отырыс" data-ru="Выездное заседание">Көшпелі отырыс</span>
-      </div>
-    </div>
+     <div class="brand-mark"><svg class="ic"><use href="#i-book-stack"/></svg></div>
+     <div class="brand-text">
+       <strong data-kk="ҚКО · Көкшетау 2026" data-ru="КБС · Кокшетау 2026">ҚКО · Көкшетау 2026</strong>
+       <span data-kk="Көшпелі отырыс" data-ru="Выездное заседание">Көшпелі отырыс</span>
+     </div>
+   </div>
     <div class="nav-links">
       <a class="nav-link" href="#program" data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</a>
       <a class="nav-link" href="#feedback" data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</a>
-    </div>
+   </div>
     <div class="nav-right">
-      <div class="seg" id="langSeg">
-        <div class="seg-pill"></div>
-        <button type="button" class="active" data-lang="kk">ҚАЗ</button>
-        <button type="button" data-lang="ru">РУС</button>
-      </div>
-    </div>
-  </div>
+     <div class="seg" id="langSeg">
+       <div class="seg-pill"></div>
+       <button type="button" class="active" data-lang="kk">ҚАЗ</button>
+       <button type="button" data-lang="ru">РУС</button>
+     </div>
+   </div>
+ </div>
 </nav>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
 <header class="hero">
   <div class="wrap">
     <div class="hero-grid">
-      <div>
-        <div class="eyebrow">
-          <svg class="ic"><use href="#i-sparkle"/></svg>
-          <span data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз (КБС)">Қазақстан Кітапханалар Одағы</span>
-        </div>
-        <h1 class="hero-title" data-kk="Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі" data-ru="Глобальный взгляд и устойчивое развитие: роль библиотек в формировании будущего">Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі</h1>
-        <p class="hero-sub" data-kk="Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы." data-ru="Программа очередного выездного заседания Казахстанского библиотечного союза (КБС). Акмолинская областная универсальная научная библиотека имени М. Жумабаева.">Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы.</p>
-        <div class="meta-chips">
-          <div class="chip">
-            <svg class="ic"><use href="#i-calendar"/></svg>
-            <div class="chip-text">
-              <b data-kk="26–27 маусым 2026" data-ru="26–27 июня 2026">26–27 маусым 2026</b>
-              <small data-kk="Жұма, сенбі" data-ru="Пятница, суббота">Жұма, сенбі</small>
-            </div>
-          </div>
-          <div class="chip">
-            <svg class="ic"><use href="#i-pin"/></svg>
-            <div class="chip-text">
-              <b data-kk="Көкшетау қ., Абай к-сі, 111" data-ru="г. Кокшетау, ул. Абая, 111">Көкшетау қ., Абай к-сі, 111</b>
-              <small data-kk="М. Жұмабаев атынд. кітапхана" data-ru="Библиотека им. М. Жумабаева">М. Жұмабаев атынд. кітапхана</small>
-            </div>
-          </div>
-          <div class="chip">
-            <svg class="ic"><use href="#i-clock"/></svg>
-            <div class="chip-text">
-              <b data-kk="Басталу — 10:00" data-ru="Начало — 10:00">Басталу — 10:00</b>
-              <small data-kk="Тіркеу — 08:00-ден" data-ru="Регистрация — с 08:00">Тіркеу — 08:00-ден</small>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div>
+       <div class="eyebrow">
+         <svg class="ic"><use href="#i-sparkle"/></svg>
+         <span data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз (КБС)">Қазақстан Кітапханалар Одағы</span>
+       </div>
+       <h1 class="hero-title" data-kk="Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі" data-ru="Глобальный взгляд и устойчивое развитие: роль библиотек в формировании будущего">Жаһандық көзқарас және тұрақты даму: кітапханалардың болашақты құрудағы рөлі</h1>
+       <p class="hero-sub" data-kk="Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы." data-ru="Программа очередного выездного заседания Казахстанского библиотечного союза (КБС). Акмолинская областная универсальная научная библиотека имени М. Жумабаева.">Қазақстан Кітапханалар Одағының (ҚКО) кезекті көшпелі отырысының бағдарламасы. М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы.</p>
+       <div class="meta-chips">
+         <div class="chip">
+           <svg class="ic"><use href="#i-calendar"/></svg>
+           <div class="chip-text">
+             <b data-kk="26–27 маусым 2026" data-ru="26–27 июня 2026">26–27 маусым 2026</b>
+             <small data-kk="Жұма, сенбі" data-ru="Пятница, суббота">Жұма, сенбі</small>
+           </div>
+         </div>
+         <div class="chip">
+           <svg class="ic"><use href="#i-pin"/></svg>
+           <div class="chip-text">
+             <b data-kk="Көкшетау қ., Абай к-сі, 111" data-ru="г. Кокшетау, ул. Абая, 111">Көкшетау қ., Абай к-сі, 111</b>
+             <small data-kk="М. Жұмабаев атынд. кітапхана" data-ru="Библиотека им. М. Жумабаева">М. Жұмабаев атынд. кітапхана</small>
+           </div>
+         </div>
+         <div class="chip">
+           <svg class="ic"><use href="#i-clock"/></svg>
+           <div class="chip-text">
+             <b data-kk="Басталу — 10:00" data-ru="Начало — 10:00">Басталу — 10:00</b>
+             <small data-kk="Тіркеу — 08:00-ден" data-ru="Регистрация — с 08:00">Тіркеу — 08:00-ден</small>
+           </div>
+         </div>
+       </div>
+     </div>
 
-      <div class="count-card">
-        <div class="count-label"><span class="dot"></span><span data-kk="Іс-шараның басталуына дейін" data-ru="До начала мероприятия">Іс-шараның басталуына дейін</span></div>
-        <div class="count-grid">
-          <div class="count-unit"><div class="count-num" id="cd-days">00</div><small data-kk="күн" data-ru="дн">күн</small></div>
-          <div class="count-unit"><div class="count-num" id="cd-hours">00</div><small data-kk="сағ" data-ru="ч">сағ</small></div>
-          <div class="count-unit"><div class="count-num" id="cd-mins">00</div><small data-kk="мин" data-ru="мин">мин</small></div>
-          <div class="count-unit"><div class="count-num" id="cd-secs">00</div><small data-kk="сек" data-ru="сек">сек</small></div>
-        </div>
-        <div class="count-status" id="cd-status"></div>
-      </div>
-    </div>
-  </div>
-
-
+     <div class="count-card">
+       <div class="count-label"><span class="dot"></span><span data-kk="Іс-шараның басталуына дейін" data-ru="До начала мероприятия">Іс-шараның басталуына дейін</span></div>
+       <div class="count-grid">
+         <div class="count-unit"><div class="count-num" id="cd-days">00</div><small data-kk="күн" data-ru="дн">күн</small></div>
+         <div class="count-unit"><div class="count-num" id="cd-hours">00</div><small data-kk="сағ" data-ru="ч">сағ</small></div>
+         <div class="count-unit"><div class="count-num" id="cd-mins">00</div><small data-kk="мин" data-ru="мин">мин</small></div>
+         <div class="count-unit"><div class="count-num" id="cd-secs">00</div><small data-kk="сек" data-ru="сек">сек</small></div>
+       </div>
+       <div class="count-status" id="cd-status"></div>
+     </div>
+   </div>
+ </div>
 </header>
 
-<!-- ============================================================
-     PROGRAM
-     ============================================================ -->
 <main class="wrap" id="program">
 
   <div class="sec-head">
-    <div>
+   <div>
       <p class="sec-eyebrow" data-kk="Іс-шара бағдарламасы" data-ru="Программа мероприятия">Іс-шара бағдарламасы</p>
       <h2 class="sec-title" data-kk="Екі күндік бағдарлама" data-ru="Программа на два дня">Екі күндік бағдарлама</h2>
-    </div>
+   </div>
     <p class="sec-note" data-kk="Барлық уақыт Қазақстан уақыты бойынша (GMT+5) көрсетілген." data-ru="Всё время указано по времени Казахстана (GMT+5).">Барлық уақыт Қазақстан уақыты бойынша (GMT+5) көрсетілген.</p>
-  </div>
+ </div>
 
   <div class="day-tabs-wrap">
     <div class="day-tabs" id="dayTabs" data-active="1">
-      <div class="pill"></div>
-      <button class="day-tab active" data-day="1" type="button">
-        <b data-kk="26 маусым" data-ru="26 июня">26 маусым</b>
-        <span data-kk="жұма · отырыс күні" data-ru="пятница · день заседания">жұма · отырыс күні</span>
-      </button>
-      <button class="day-tab" data-day="2" type="button">
-        <b data-kk="27 маусым" data-ru="27 июня">27 маусым</b>
-        <span data-kk="сенбі · экскурсия" data-ru="суббота · экскурсия">сенбі · экскурсия</span>
-      </button>
-    </div>
-  </div>
+     <div class="pill"></div>
+     <button class="day-tab active" data-day="1" type="button">
+       <b data-kk="26 маусым" data-ru="26 июня">26 маусым</b>
+       <span data-kk="жұма · отырыс күні" data-ru="пятница · день заседания">жұма · отырыс күні</span>
+     </button>
+     <button class="day-tab" data-day="2" type="button">
+       <b data-kk="27 маусым" data-ru="27 июня">27 маусым</b>
+       <span data-kk="сенбі · экскурсия" data-ru="суббота · экскурсия">сенбі · экскурсия</span>
+     </button>
+   </div>
+ </div>
 
-  <!-- ===================== DAY 1 ===================== -->
-  <div class="day-panel active" id="day1">
+ <div class="day-panel active" id="day1">
 
     <div class="group" data-start="2026-06-26T08:00:00+05:00" data-end="2026-06-26T10:30:00+05:00">
-      <div class="group-head">
-        <svg class="ic"><use href="#i-flag"/></svg>
-        <h3 data-kk="Көшпелі жұмыс отырысының ресми ашылуы" data-ru="Официальное открытие выездного рабочего заседания">Көшпелі жұмыс отырысының ресми ашылуы</h3>
-      </div>
+     <div class="group-head">
+       <svg class="ic"><use href="#i-flag"/></svg>
+       <h3 data-kk="Көшпелі жұмыс отырысының ресми ашылуы" data-ru="Официальное открытие выездного рабочего заседания">Көшпелі жұмыс отырысының ресми ашылуы</h3>
+     </div>
 
-      <div class="row" data-start="2026-06-26T08:00:00+05:00" data-end="2026-06-26T10:00:00+05:00">
-        <div class="row-time">
-          <span class="t">08:00–10:00</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-check-person"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Тіркеу" data-ru="Регистрация участников">Тіркеу</h4>
-          <div class="venue">
-            <svg class="ic"><use href="#i-pin"/></svg>
-            <span data-kk="М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Акмолинская областная универсальная научная библиотека имени М. Жумабаева">М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span>
-          </div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T08:00:00+05:00" data-end="2026-06-26T10:00:00+05:00">
+       <div class="row-time">
+         <span class="t">08:00–10:00</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-check-person"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Тіркеу" data-ru="Регистрация участников">Тіркеу</h4>
+         <div class="venue">
+           <svg class="ic"><use href="#i-pin"/></svg>
+           <span data-kk="М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Акмолинская областная универсальная научная библиотека имени М. Жумабаева">М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span>
+         </div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:00:00+05:00" data-end="2026-06-26T10:15:00+05:00">
-        <div class="row-time">
-          <span class="t">10:00–10:15</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Құттықтау сөз" data-ru="Приветственное слово">Құттықтау сөз</h4>
-          <div class="person">
-            <svg class="ic"><use href="#i-people"/></svg>
-            <span data-kk="Құрманова А.А., ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитеті, Ақмола облысының Әкімдігі, Ақмола облыстық Мәдениет басқармасы" data-ru="Комитет по делам архивов, документации и книгоиздания Министерства культуры и информации РК, Акимат Акмолинской области, Управление культуры Акмолинской области">ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитеті, Ақмола облысының Әкімдігі, Ақмола облыстық Мәдениет басқармасы</span>
-          </div>
-          <div class="person">
-            <svg class="ic"><use href="#i-check-person"/></svg>
-            <span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза, Заслуженный деятель Казахстана, член Союза писателей Казахстана">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі</span>
-          </div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T10:00:00+05:00" data-end="2026-06-26T10:15:00+05:00">
+       <div class="row-time">
+         <span class="t">10:00–10:15</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Құттықтау сөз" data-ru="Приветственное слово">Құттықтау сөз</h4>
+         
+         <div class="person">
+           <svg class="ic"><use href="#i-check-person"/></svg>
+           <span data-kk="Құрманова А.А., ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитетінің төрағасы" data-ru="Курманова А.А., председатель Комитета по делам архивов, документации и книгоиздания Министерства культуры и информации РК">Құрманова А.А., ҚР Мәдениет және ақпарат министрлігінің Архив, құжаттама және кітап ісі комитетінің төрағасы</span>
+         </div>
+         
+         <div class="person">
+           <svg class="ic"><use href="#i-people"/></svg>
+           <span data-kk="Ақмола облысының Әкімдігі өкілі" data-ru="Представитель Акимата Акмолинской области">Ақмола облысының Әкімдігі өкілі</span>
+         </div>
+         
+         <div class="person">
+           <svg class="ic"><use href="#i-people"/></svg>
+           <span data-kk="Ақмола облыстық Мәдениет басқармасы өкілі" data-ru="Представитель Управления культуры Акмолинской области">Ақмола облыстық Мәдениет басқармасы өкілі</span>
+         </div>
+         
+         <div class="person">
+           <svg class="ic"><use href="#i-check-person"/></svg>
+           <span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза, Заслуженный деятель Казахстана, член Союза писателей Казахстана">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы, Қазақстанның Еңбек сіңірген қайраткері, Қазақстан Жазушылар одағының мүшесі</span>
+         </div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
-        <div class="row-time">
-          <span class="t">10:15–10:30</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-gift"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Мерейтойлармен құттықтау. Кітапхана басшылары" data-ru="Поздравление юбиляров. Руководители библиотек">Мерейтойлармен құттықтау. Кітапхана басшылары</h4>
-          <div class="person">
-            <svg class="ic"><use href="#i-mail"/></svg>
-            <span data-kk="ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау" data-ru="Вручение поздравительного письма вице-министра культуры и информации РК Рустама Али">ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау</span>
-          </div>
-          <ul class="sub-list">
-            <li data-kk="Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)" data-ru="Измуханбетова Сара Салахединовна – 60 лет (директор Атырауской областной научной универсальной библиотеки имени Г. Сланова, 27.06.1966 г.)">Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)</li>
-            <li data-kk="Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)" data-ru="Бектембаев Мейрам Еркенович – 50 лет (директор Централизованной библиотечной системы города Алматы, 17.11.1976 г.)">Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)</li>
-          </ul>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+       <div class="row-time">
+         <span class="t">10:15–10:30</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-gift"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Мерейтойлармен құттықтау. Кітапхана басшылары" data-ru="Поздравление юбиляров. Руководители библиотек">Мерейтойлармен құттықтау. Кітапхана басшылары</h4>
+         <div class="person">
+           <svg class="ic"><use href="#i-mail"/></svg>
+           <span data-kk="ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау" data-ru="Вручение поздравительного письма вице-министра культуры и информации РК Рустама Али">ҚР Мәдениет және ақпарат вице-министрі Рустам Алидің құттықтау хатын табыстау</span>
+         </div>
+         <ul class="sub-list">
+           <li data-kk="Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)" data-ru="Измуханбетова Сара Салахединовна – 60 лет (директор Атырауской областной научной универсальной библиотеки имени Г. Сланова, 27.06.1966 г.)">Измұханбетова Сара Салахединқызы – 60 жас (Ғ.Сланов атындағы Атырау облыстық ғылыми әмбебап кітапханасының директоры, 27.06.1966 ж.)</li>
+           <li data-kk="Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)" data-ru="Бектембаев Мейрам Еркенович – 50 лет (директор Централизованной библиотечной системы города Алматы, 17.11.1976 г.)">Бектембаев Мейрам Еркенұлы – 50 жас (Алматы қаласы Орталықтандырылған кітапханалар жүйесінің директоры, 17.11.1976 ж.)</li>
+         </ul>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
-        <div class="row-time">
-          <span class="t">10:15–10:30</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-medal"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Кітапхана саласының үздік мамандарын марапаттау" data-ru="Награждение лучших специалистов библиотечной отрасли">Кітапхана саласының үздік мамандарын марапаттау</h4>
-          <div class="person">
-            <svg class="ic"><use href="#i-medal"/></svg>
-            <span data-kk="«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары" data-ru="Звания «Почётный библиотекарь Казахстана», «Лучший по профессии», «Ветеран библиотечного дела»">«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары</span>
-          </div>
-          <div class="person">
-            <svg class="ic"><use href="#i-mail"/></svg>
-            <span data-kk="ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау" data-ru="Вручение нагрудных знаков Национальной библиотеки РК и Казахстанского библиотечного союза">ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау</span>
-          </div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+       <div class="row-time">
+         <span class="t">10:15–10:30</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-medal"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Кітапхана саласының үздік мамандарын марапаттау" data-ru="Награждение лучших специалистов библиотечной отрасли">Кітапхана саласының үздік мамандарын марапаттау</h4>
+         <div class="person">
+           <svg class="ic"><use href="#i-medal"/></svg>
+           <span data-kk="«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары" data-ru="Звания «Почётный библиотекарь Казахстана», «Лучший по профессии», «Ветеран библиотечного дела»">«Қазақстанның Құрметті кітапханашысы», «Кітапхана ісінің үздігі», «Кітапхана ісінің ардагері» атаулары</span>
+         </div>
+         <div class="person">
+           <svg class="ic"><use href="#i-mail"/></svg>
+           <span data-kk="ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау" data-ru="Вручение нагрудных знаков Национальной библиотеки РК и Казахстанского библиотечного союза">ҚР Ұлттық кітапханасы мен Қазақстан Кітапханалар Одағының төсбелгілерін табыстау</span>
+         </div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
-        <div class="row-time">
-          <span class="t">10:15–10:30</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-book-stack"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Кітапханалар мерейтойларымен құттықтау" data-ru="Поздравление с юбилеями библиотек">Кітапханалар мерейтойларымен құттықтау</h4>
-          <div class="person">
-            <svg class="ic"><use href="#i-mail"/></svg>
-            <span data-kk="Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау" data-ru="Вручение сертификатов книжных издательств от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау</span>
-          </div>
-          <ul class="sub-list">
-            <li data-kk="М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл" data-ru="Акмолинской областной универсальной научной библиотеке имени М. Жумабаева — 80 лет">М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл</li>
-            <li data-kk="Атырау облыстық балалар кітапханасына — 60 жыл" data-ru="Атырауской областной детской библиотеке — 60 лет">Атырау облыстық балалар кітапханасына — 60 жыл</li>
-            <li data-kk="Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл" data-ru="Карагандинской областной библиотеке для подростков имени Ж. Бектурова — 50 лет">Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл</li>
-            <li data-kk="Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл" data-ru="Городской библиотеке для подростков имени Жамбыла — 50 лет">Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл</li>
-            <li data-kk="Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл" data-ru="Туркестанской областной универсальной научной библиотеке «Фараби» — 5 лет">Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл</li>
-          </ul>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+       <div class="row-time">
+         <span class="t">10:15–10:30</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-book-stack"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Кітапханалар мерейтойларымен құттықтау" data-ru="Поздравление с юбилеями библиотек">Кітапханалар мерейтойларымен құттықтау</h4>
+         <div class="person">
+           <svg class="ic"><use href="#i-mail"/></svg>
+           <span data-kk="Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау" data-ru="Вручение сертификатов книжных издательств от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан кітап баспаларынан сертификаттар табыстау</span>
+         </div>
+         <ul class="sub-list">
+           <li data-kk="М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл" data-ru="Акмолинской областной универсальной научной библиотеке имени М. Жумабаева — 80 лет">М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасына — 80 жыл</li>
+           <li data-kk="Атырау облыстық балалар кітапханасына — 60 жыл" data-ru="Атырауской областной детской библиотеке — 60 лет">Атырау облыстық балалар кітапханасына — 60 жыл</li>
+           <li data-kk="Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл" data-ru="Карагандинской областной библиотеке для подростков имени Ж. Бектурова — 50 лет">Ж. Бектұров атындағы Қарағанды облыстық жасөспірімдер кітапханасына — 50 жыл</li>
+           <li data-kk="Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл" data-ru="Городской библиотеке для подростков имени Жамбыла — 50 лет">Жамбыл атындағы қалалық жасөспірімдер кітапханасына — 50 жыл</li>
+           <li data-kk="Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл" data-ru="Туркестанской областной универсальной научной библиотеке «Фараби» — 5 лет">Түркістан облыстық «Фараб» әмбебап ғылыми кітапханасына — 5 жыл</li>
+         </ul>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
-        <div class="row-time">
-          <span class="t">10:15–10:30</span>
-          <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
-        </div>
-        <div class="row-icon"><svg class="ic"><use href="#i-trophy"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары" data-ru="Региональным библиотекам: номинации «Лучшее мероприятие», «Генератор идей»">Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары</h4>
-          <div class="person">
-            <svg class="ic"><use href="#i-calendar"/></svg>
-            <span data-kk="«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды" data-ru="Определены по итогам недели «Библиотекарь года – 2026», организованной в рамках Национального дня книги">«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды</span>
-          </div>
-          <div class="person">
-            <svg class="ic"><use href="#i-mail"/></svg>
-            <span data-kk="Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау" data-ru="Вручение сертификатов на онлайн-курс обучения ИИ «ONYX AI AGENCY» от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау</span>
-          </div>
-        </div>
-      </div>
-    </div>
+     <div class="row" data-start="2026-06-26T10:15:00+05:00" data-end="2026-06-26T10:30:00+05:00">
+       <div class="row-time">
+         <span class="t">10:15–10:30</span>
+         <span class="status-pill"><span class="dot"></span><span class="s-text"></span></span>
+       </div>
+       <div class="row-icon"><svg class="ic"><use href="#i-trophy"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары" data-ru="Региональным библиотекам: номинации «Лучшее мероприятие», «Генератор идей»">Өңірлік кітапханаларға: «Үздік іс-шара», «Идея генераторы» номинациялары</h4>
+         <div class="person">
+           <svg class="ic"><use href="#i-calendar"/></svg>
+           <span data-kk="«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды" data-ru="Определены по итогам недели «Библиотекарь года – 2026», организованной в рамках Национального дня книги">«Жыл кітапханашысы-2026» Ұлттық кітап күні аясында ұйымдастырылған апта нәтижелері бойынша анықталды</span>
+         </div>
+         <div class="person">
+           <svg class="ic"><use href="#i-mail"/></svg>
+           <span data-kk="Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау" data-ru="Вручение сертификатов на онлайн-курс обучения ИИ «ONYX AI AGENCY» от имени Казахстанского библиотечного союза">Қазақстан Кітапханалар Одағының атынан «ONYX AI AGENCY» ЖИ оқыту онлайн курсына сертификаттар табыстау</span>
+         </div>
+       </div>
+     </div>
+   </div>
 
     <div class="group" data-start="2026-06-26T10:30:00+05:00" data-end="2026-06-26T12:40:00+05:00">
-      <div class="group-head">
-        <svg class="ic"><use href="#i-podium"/></svg>
-        <h3 data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</h3>
-      </div>
+     <div class="group-head">
+       <svg class="ic"><use href="#i-podium"/></svg>
+       <h3 data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</h3>
+     </div>
 
-      <div class="row" data-start="2026-06-26T10:30:00+05:00" data-end="2026-06-26T11:00:00+05:00">
-        <div class="row-time"><span class="t">10:30–11:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру" data-ru="Направления развития Казахстанского библиотечного союза. Презентация сайта КБС">Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T10:30:00+05:00" data-end="2026-06-26T11:00:00+05:00">
+       <div class="row-time"><span class="t">10:30–11:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру" data-ru="Направления развития Казахстанского библиотечного союза. Презентация сайта КБС">Қазақстан Кітапханалар Одағының даму бағыттары. ҚКО сайтын таныстыру</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель Казахстанского библиотечного союза">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, Қазақстан Кітапханалар Одағының төрағасы</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T11:00:00+05:00" data-end="2026-06-26T11:20:00+05:00">
-        <div class="row-time"><span class="t">11:00–11:20</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-scroll"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="«Кітапхана және баспа ісі туралы» Заң жобасы" data-ru="Законопроект «О библиотечном деле и книгоиздании»">«Кітапхана және баспа ісі туралы» Заң жобасы</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры" data-ru="Сейтова К.К., директор Национальной академической библиотеки РК">Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T11:00:00+05:00" data-end="2026-06-26T11:20:00+05:00">
+       <div class="row-time"><span class="t">11:00–11:20</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-scroll"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="«Кітапхана және баспа ісі туралы» Заң жобасы" data-ru="Законопроект «О библиотечном деле и книгоиздании»">«Кітапхана және баспа ісі туралы» Заң жобасы</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры" data-ru="Сейтова К.К., директор Национальной академической библиотеки РК">Сейітова К.Қ., ҚР Ұлттық академиялық кітапханасының директоры</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T11:20:00+05:00" data-end="2026-06-26T11:40:00+05:00">
-        <div class="row-time"><span class="t">11:20–11:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-book"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы" data-ru="Значение учебников на казахском языке для развития библиотечной науки">Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы" data-ru="Алтынбек К.М., учёный секретарь Национальной библиотеки РК">Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T11:20:00+05:00" data-end="2026-06-26T11:40:00+05:00">
+       <div class="row-time"><span class="t">11:20–11:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-book"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы" data-ru="Значение учебников на казахском языке для развития библиотечной науки">Кітапхана ісі ғылымын дамытудағы қазақ тіліндегі оқулықтардың маңызы</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы" data-ru="Алтынбек К.М., учёный секретарь Национальной библиотеки РК">Алтынбек Қ.М., ҚР Ұлттық кітапханасының ғылыми хатшысы</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T11:40:00+05:00" data-end="2026-06-26T12:00:00+05:00">
-        <div class="row-time"><span class="t">11:40–12:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-checklist"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Библиографиялық сипаттаудың жаңа Ұлттық стандарты" data-ru="Новый национальный стандарт библиографического описания">Библиографиялық сипаттаудың жаңа Ұлттық стандарты</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов Национальной библиотеки РК">Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T11:40:00+05:00" data-end="2026-06-26T12:00:00+05:00">
+       <div class="row-time"><span class="t">11:40–12:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-checklist"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Библиографиялық сипаттаудың жаңа Ұлттық стандарты" data-ru="Новый национальный стандарт библиографического описания">Библиографиялық сипаттаудың жаңа Ұлттық стандарты</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов Национальной библиотеки РК">Замзаева Т.А., ҚР Ұлттық кітапханасының Ақпараттық ресурстар қызметінің жетекшісі</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T12:00:00+05:00" data-end="2026-06-26T12:15:00+05:00">
-        <div class="row-time"><span class="t">12:00–12:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-cloud-doc"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Электронды құжаттарды тіркеу және есепке алу" data-ru="Регистрация и учёт электронных документов">Электронды құжаттарды тіркеу және есепке алу</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі" data-ru="Смагулова Г.Б., руководитель службы комплектования фонда Национальной библиотеки РК">Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T12:00:00+05:00" data-end="2026-06-26T12:15:00+05:00">
+       <div class="row-time"><span class="t">12:00–12:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-cloud-doc"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Электронды құжаттарды тіркеу және есепке алу" data-ru="Регистрация и учёт электронных документов">Электронды құжаттарды тіркеу және есепке алу</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі" data-ru="Смагулова Г.Б., руководитель службы комплектования фонда Национальной библиотеки РК">Смағұлова Г.Б., ҚР Ұлттық кітапханасының Қорды толықтыру қызметінің жетекшісі</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T12:15:00+05:00" data-end="2026-06-26T12:30:00+05:00">
-        <div class="row-time"><span class="t">12:15–12:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="ЖИ және кітапхана: жаңа кезеңнің қалыптасуы" data-ru="ИИ и библиотека: формирование новой эпохи">ЖИ және кітапхана: жаңа кезеңнің қалыптасуы</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы Национальной библиотеки РК, AI creator">Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
-        </div>
-      </div>
+     <div class="row" data-start="2026-06-26T12:15:00+05:00" data-end="2026-06-26T12:30:00+05:00">
+       <div class="row-time"><span class="t">12:15–12:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="ЖИ және кітапхана: жаңа кезеңнің қалыптасуы" data-ru="ИИ и библиотека: формирование новой эпохи">ЖИ және кітапхана: жаңа кезеңнің қалыптасуы</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы Национальной библиотеки РК, AI creator">Жұмахан Н.Қ., ҚР Ұлттық кітапханасының Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
+       </div>
+     </div>
 
-      <div class="row" data-start="2026-06-26T12:30:00+05:00" data-end="2026-06-26T12:40:00+05:00">
-        <div class="row-time"><span class="t">12:30–12:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-pin"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары" data-ru="Публичные библиотеки Акмолинской области: состояние и направления развития">Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары</h4>
-          <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры" data-ru="Оспан К.Е., директор Акмолинской областной универсальной научной библиотеки имени М. Жумабаева">Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры</span></div>
-        </div>
-      </div>
-    </div>
+     <div class="row" data-start="2026-06-26T12:30:00+05:00" data-end="2026-06-26T12:40:00+05:00">
+       <div class="row-time"><span class="t">12:30–12:40</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-pin"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары" data-ru="Публичные библиотеки Акмолинской области: состояние и направления развития">Ақмола облысының көпшілік кітапханалары: ахуалы және даму бағыттары</h4>
+         <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры" data-ru="Оспан К.Е., директор Акмолинской областной универсальной научной библиотеки имени М. Жумабаева">Оспан Қ.Е., М.Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасының директоры</span></div>
+       </div>
+     </div>
+   </div>
 
     <div class="banner" data-start="2026-06-26T12:40:00+05:00" data-end="2026-06-26T14:00:00+05:00">
-      <div class="row-icon"><svg class="ic"><use href="#i-cutlery"/></svg></div>
-      <div class="banner-text">
-        <b data-kk="Түскі үзіліс" data-ru="Обеденный перерыв">Түскі үзіліс</b>
-        <span data-kk="Семинарлар алдындағы демалыс" data-ru="Перерыв перед семинарами">Семинарлар алдындағы демалыс</span>
-      </div>
-      <div class="banner-time">12:40–14:00</div>
-    </div>
+     <div class="row-icon"><svg class="ic"><use href="#i-cutlery"/></svg></div>
+     <div class="banner-text">
+       <b data-kk="Түскі үзіліс" data-ru="Обеденный перерыв">Түскі үзіліс</b>
+       <span data-kk="Семинарлар алдындағы демалыс" data-ru="Перерыв перед семинарами">Семинарлар алдындағы демалыс</span>
+     </div>
+     <div class="banner-time">12:40–14:00</div>
+   </div>
 
     <div class="sec-head" style="margin-bottom:14px;">
-      <div>
-        <p class="sec-eyebrow" data-kk="Параллель форматтар" data-ru="Параллельный формат">Параллель форматтар</p>
-        <h2 class="sec-title" data-kk="Оқыту семинарлары мен шеберлік сағаттар" data-ru="Обучающие семинары и мастер-классы">Оқыту семинарлары мен шеберлік сағаттар</h2>
-      </div>
-    </div>
+     <div>
+       <p class="sec-eyebrow" data-kk="Параллель форматтар" data-ru="Параллельный формат">Параллель форматтар</p>
+       <h2 class="sec-title" data-kk="Оқыту семинарлары мен шеберлік сағаттар" data-ru="Обучающие семинары и мастер-классы">Оқыту семинарлары мен шеберлік сағаттар</h2>
+     </div>
+   </div>
     <div class="parallel-note">
-      <svg class="ic"><use href="#i-layers"/></svg>
-      <span data-kk="14:00–16:30 аралығында үш локацияда қатарлас өтеді" data-ru="Проходят параллельно на трёх локациях с 14:00 до 16:30">14:00–16:30 аралығында үш локацияда қатарлас өтеді</span>
-    </div>
+     <svg class="ic"><use href="#i-layers"/></svg>
+     <span data-kk="14:00–16:30 аралығында үш локацияда қатарлас өтеді" data-ru="Проходят параллельно на трёх локациях с 14:00 до 16:30">14:00–16:30 аралығында үш локацияда қатарлас өтеді</span>
+   </div>
 
     <div class="loc-grid">
-      <!-- LOCATION 1 -->
-      <div class="loc-col">
-        <div class="loc-head">
-          <div class="loc-badge">1</div>
-          <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы" data-ru="Библиотека им. М. Жумабаева. Зал заседаний им. С.С. Жунисова">М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы</b></div>
-        </div>
-        <div class="group">
-          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T14:30:00+05:00">
-            <div class="row-time"><span class="t">14:00–14:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Интеллектуалды кітапхана: ЖИ-технологиялар" data-ru="Интеллектуальная библиотека: ИИ-технологии">Интеллектуалды кітапхана: ЖИ-технологиялар</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов НБ РК">Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі</span></div>
-            </div>
-          </div>
-          <div class="row" data-start="2026-06-26T14:30:00+05:00" data-end="2026-06-26T14:45:00+05:00">
-            <div class="row-time"><span class="t">14:30–14:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-lightbulb"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде" data-ru="Библиотеки как платформа формирования интеллектуальной нации">Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі" data-ru="Бекмуханбет А.К., руководитель группы научно-методической службы НБ РК">Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі</span></div>
-            </div>
-          </div>
-          <div class="row" data-start="2026-06-26T14:45:00+05:00" data-end="2026-06-26T15:15:00+05:00">
-            <div class="row-time"><span class="t">14:45–15:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-quill"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері" data-ru="От данных к живому сюжету: искусство сторителлинга с ИИ">Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы НБ РК, AI creator">Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
-            </div>
-          </div>
-          <div class="row" data-start="2026-06-26T15:15:00+05:00" data-end="2026-06-26T15:45:00+05:00">
-            <div class="row-time"><span class="t">15:15–15:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-glasses"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак" data-ru="Как нужно читать книгу? Казахский лайфхак столетней давности">Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері" data-ru="Билял Е., сотрудник службы редких книг и рукописей НБ РК">Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері</span></div>
-            </div>
-          </div>
-          <div class="row" data-start="2026-06-26T15:45:00+05:00" data-end="2026-06-26T16:30:00+05:00">
-            <div class="row-time"><span class="t">15:45–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық" data-ru="Диалоговая площадка руководителей. Подготовка к 90-му конгрессу WLIC ИФЛА">Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель КБС">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы</span></div>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары" data-ru="Жолдыбалинов Н.Н., заместитель директора Национальной академической библиотеки РК, заместитель председателя КБС">Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div class="loc-col">
+       <div class="loc-head">
+         <div class="loc-badge">1</div>
+         <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы" data-ru="Библиотека им. М. Жумабаева. Зал заседаний им. С.С. Жунисова">М. Жұмабаев атынд. кітапхана. С.С. Жүнісов атынд. Мәжіліс залы</b></div>
+       </div>
+       <div class="group">
+         <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T14:30:00+05:00">
+           <div class="row-time"><span class="t">14:00–14:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Интеллектуалды кітапхана: ЖИ-технологиялар" data-ru="Интеллектуальная библиотека: ИИ-технологии">Интеллектуалды кітапхана: ЖИ-технологиялар</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі" data-ru="Замзаева Т.А., руководитель службы информационных ресурсов НБ РК">Замзаева Т.А., ҚР ҰК Ақпараттық ресурстар қызметінің жетекшісі</span></div>
+           </div>
+         </div>
+         <div class="row" data-start="2026-06-26T14:30:00+05:00" data-end="2026-06-26T14:45:00+05:00">
+           <div class="row-time"><span class="t">14:30–14:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-lightbulb"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде" data-ru="Библиотеки как платформа формирования интеллектуальной нации">Кітапханалар — зерделі ұлт қалыптастыру платформасы ретінде</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі" data-ru="Бекмуханбет А.К., руководитель группы научно-методической службы НБ РК">Бекмұханбет А.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің топ жетекшісі</span></div>
+           </div>
+         </div>
+         <div class="row" data-start="2026-06-26T14:45:00+05:00" data-end="2026-06-26T15:15:00+05:00">
+           <div class="row-time"><span class="t">14:45–15:15</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-quill"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері" data-ru="От данных к живому сюжету: искусство сторителлинга с ИИ">Жансыз деректен жанды сюжетке: ЖИ-мен сторителлинг өнері</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator" data-ru="Жумахан Н.К., сотрудник научно-методической службы НБ РК, AI creator">Жұмахан Н.Қ., ҚР ҰК Ғылыми-әдістемелік қызметінің қызметкері, AI creator</span></div>
+           </div>
+         </div>
+         <div class="row" data-start="2026-06-26T15:15:00+05:00" data-end="2026-06-26T15:45:00+05:00">
+           <div class="row-time"><span class="t">15:15–15:45</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-glasses"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак" data-ru="Как нужно читать книгу? Казахский лайфхак столетней давности">Кітапты қалай оқу керек? 100 жыл бұрынғы қазақша лайфхак</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері" data-ru="Билял Е., сотрудник службы редких книг и рукописей НБ РК">Біләл Е., ҚР ҰК Сирек кітаптар мен қолжазбалар қызметінің қызметкері</span></div>
+           </div>
+         </div>
+         <div class="row" data-start="2026-06-26T15:45:00+05:00" data-end="2026-06-26T16:30:00+05:00">
+           <div class="row-time"><span class="t">15:45–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-globe"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық" data-ru="Диалоговая площадка руководителей. Подготовка к 90-му конгрессу WLIC ИФЛА">Басшылардың диалог алаңы. IFLA-ның 90-шы WLIC Конгресіне дайындық</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы" data-ru="Нургалиева Г.К., директор Национальной библиотеки РК, председатель КБС">Нұрғалиева Ғ.Қ., ҚР Ұлттық кітапханасының директоры, ҚКО төрағасы</span></div>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары" data-ru="Жолдыбалинов Н.Н., заместитель директора Национальной академической библиотеки РК, заместитель председателя КБС">Жолдыбалинов Н.Н., ҚР Ұлттық академиялық кітапханасы директорының орынбасары, ҚКО төрағасының орынбасары</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
 
-      <!-- LOCATION 2 -->
-      <div class="loc-col">
-        <div class="loc-head">
-          <div class="loc-badge">2</div>
-          <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы" data-ru="Библиотека им. М. Жумабаева. Зал детской литературы">М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы</b></div>
-        </div>
-        <div class="group">
-          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T16:30:00+05:00">
-            <div class="row-time"><span class="t">14:00–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-child-book"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер" data-ru="Детская библиотека: новое содержание, новый формат, новые возможности">Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары" data-ru="Жакупова А.Б., заместитель директора Национальной академической библиотеки РК">Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары</span></div>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры" data-ru="Уатаева Б.К., директор Карагандинской областной детской библиотеки имени Абая">Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div class="loc-col">
+       <div class="loc-head">
+         <div class="loc-badge">2</div>
+         <div class="loc-head-text"><b data-kk="М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы" data-ru="Библиотека им. М. Жумабаева. Зал детской литературы">М. Жұмабаев атынд. кітапхана. Балалар әдебиеті залы</b></div>
+       </div>
+       <div class="group">
+         <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T16:30:00+05:00">
+           <div class="row-time"><span class="t">14:00–16:30</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-child-book"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер" data-ru="Детская библиотека: новое содержание, новый формат, новые возможности">Балалар кітапханасы: жаңа мазмұн, жаңа формат, жаңа мүмкіндіктер</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары" data-ru="Жакупова А.Б., заместитель директора Национальной академической библиотеки РК">Жакупова А.Б., ҚР Ұлттық академиялық кітапханасы директорының орынбасары</span></div>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры" data-ru="Уатаева Б.К., director Карагандинской областной детской библиотеки имени Абая">Уатаева Б.Қ., Абай атындағы Қарағанды облыстық балалар кітапханасының директоры</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
 
-      <!-- LOCATION 3 -->
-      <div class="loc-col">
-        <div class="loc-head">
-          <div class="loc-badge">3</div>
-          <div class="loc-head-text"><b data-kk="Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы" data-ru="Городская информационная библиотечная система. Казахская городская образцовая библиотека">Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы</b></div>
-        </div>
-        <div class="group">
-          <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T15:00:00+05:00">
-            <div class="row-time"><span class="t">14:00–15:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Баспасөз және қоғаммен байланыс" data-ru="Пресса и связи с общественностью">Баспасөз және қоғаммен байланыс</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі" data-ru="Урманбеков Т.Н., руководитель службы информации и коммуникаций НБ РК">Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі</span></div>
-            </div>
-          </div>
-          <div class="row" data-start="2026-06-26T15:00:00+05:00" data-end="2026-06-26T16:00:00+05:00">
-            <div class="row-time"><span class="t">15:00–16:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-            <div class="row-icon"><svg class="ic"><use href="#i-people"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Жас кітапханашылар ұйымының ІІ жұмыс отырысы" data-ru="II рабочее заседание организации молодых библиотекарей">Жас кітапханашылар ұйымының ІІ жұмыс отырысы</h4>
-              <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі" data-ru="Кабдрашидов Е.С., руководитель группы издательской службы НБ РК">Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+     <div class="loc-col">
+       <div class="loc-head">
+         <div class="loc-badge">3</div>
+         <div class="loc-head-text"><b data-kk="Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы" data-ru="Городская информационная библиотечная система. Казахская городская образцовая библиотека">Қалалық ақпараттық кітапхана жүйесі. Қазақ қалалық үлгілі кітапханасы</b></div>
+       </div>
+       <div class="group">
+         <div class="row" data-start="2026-06-26T14:00:00+05:00" data-end="2026-06-26T15:00:00+05:00">
+           <div class="row-time"><span class="t">14:00–15:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-megaphone"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Баспасөз және қоғаммен байланыс" data-ru="Пресса и связи с общественностью">Баспасөз және қоғаммен байланыс</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі" data-ru="Урманбеков Т.Н., руководитель службы информации и коммуникаций НБ РК">Урманбеков Т.Н., ҚР ҰК Ақпарат және коммуникациялар қызметінің жетекшісі</span></div>
+           </div>
+         </div>
+         <div class="row" data-start="2026-06-26T15:00:00+05:00" data-end="2026-06-26T16:00:00+05:00">
+           <div class="row-time"><span class="t">15:00–16:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+           <div class="row-icon"><svg class="ic"><use href="#i-people"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Жас кітапханашылар ұйымының ІІ жұмыс отырысы" data-ru="II рабочее заседание организации молодых библиотекарей">Жас кітапханашылар ұйымының ІІ жұмыс отырысы</h4>
+             <div class="person"><svg class="ic"><use href="#i-check-person"/></svg><span data-kk="Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі" data-ru="Кабдрашидов Е.С., руководитель группы издательской службы НБ РК">Қабдрашидов Е.С., ҚР ҰК Баспа қызметінің топ жетекшісі</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 
-  <!-- ===================== DAY 2 ===================== -->
-  <div class="day-panel" id="day2">
+ <div class="day-panel" id="day2">
     <div class="sec-head" style="margin-bottom:14px;">
-      <div>
-        <p class="sec-eyebrow" data-kk="Мәдени бағдарлама" data-ru="Культурная программа">Мәдени бағдарлама</p>
-        <h2 class="sec-title" data-kk="Мәдени-тарихи экскурсия" data-ru="Культурно-историческая экскурсия">Мәдени-тарихи экскурсия</h2>
-      </div>
-    </div>
+     <div>
+       <p class="sec-eyebrow" data-kk="Мәдени бағдарлама" data-ru="Культурная программа">Мәдени бағдарлама</p>
+       <h2 class="sec-title" data-kk="Мәдени-тарихи экскурсия" data-ru="Культурно-историческая экскурсия">Мәдени-тарихи экскурсия</h2>
+     </div>
+   </div>
 
     <div class="group" data-start="2026-06-27T10:00:00+05:00" data-end="2026-06-27T17:00:00+05:00">
-      <div class="group-head">
-        <svg class="ic"><use href="#i-mountain"/></svg>
-        <h3 data-kk="Бурабай — Оқжетпес бағыты" data-ru="Маршрут Бурабай — Окжетпес">Бурабай — Оқжетпес бағыты</h3>
-      </div>
+     <div class="group-head">
+       <svg class="ic"><use href="#i-mountain"/></svg>
+       <h3 data-kk="Бурабай — Оқжетпес бағыты" data-ru="Маршрут Бурабай — Окжетпес">Бурабай — Оқжетпес бағыты</h3>
+     </div>
 
-      <div class="row" data-start="2026-06-27T10:00:00+05:00" data-end="2026-06-27T17:00:00+05:00">
-        <div class="row-time"><span class="t">10:00–17:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
-        <div class="row-icon"><svg class="ic"><use href="#i-camera"/></svg></div>
-        <div class="row-body">
-          <h4 data-kk="Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия" data-ru="Экскурсия в этнографический музей под открытым небом «Ботай-Бурабай»">Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия</h4>
-          <div class="venue"><svg class="ic"><use href="#i-pin"/></svg><span data-kk="Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Место сбора: Акмолинская областная универсальная научная библиотека им. М. Жумабаева">Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span></div>
-          <ul class="sub-list">
-            <li data-kk="«Оқжетпес қиясында» тимбилдинг" data-ru="Тимбилдинг на скале «Окжетпес»">«Оқжетпес қиясында» тимбилдинг</li>
-            <li data-kk="Мәдени-танымдық іс-шаралар" data-ru="Культурно-познавательные мероприятия">Мәдени-танымдық іс-шаралар</li>
-            <li data-kk="«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия" data-ru="Экскурсия в мультимедийный интерактивный комплекс национального парка «Бурабай»">«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+     <div class="row" data-start="2026-06-27T10:00:00+05:00" data-end="2026-06-27T17:00:00+05:00">
+       <div class="row-time"><span class="t">10:00–17:00</span><span class="status-pill"><span class="dot"></span><span class="s-text"></span></span></div>
+       <div class="row-icon"><svg class="ic"><use href="#i-camera"/></svg></div>
+       <div class="row-body">
+         <h4 data-kk="Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия" data-ru="Экскурсия в этнографический музей под открытым небом «Ботай-Бурабай»">Ашық аспан астындағы «Ботай-Бурабай» этнографиялық музейіне экскурсия</h4>
+         <div class="venue"><svg class="ic"><use href="#i-pin"/></svg><span data-kk="Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы" data-ru="Место сбора: Акмолинская областная универсальная научная библиотека им. М. Жумабаева">Жиналу орны: М. Жұмабаев атындағы Ақмола облыстық әмбебап ғылыми кітапханасы</span></div>
+         <ul class="sub-list">
+           <li data-kk="«Оқжетпес қиясында» тимбилдинг" data-ru="Тимбилдинг на скале «Окжетпес»">«Оқжетпес қиясында» тимбилдинг</li>
+           <li data-kk="Мәдени-танымдық іс-шаралар" data-ru="Культурно-познавательные мероприятия">Мәдени-танымдық іс-шаралар</li>
+           <li data-kk="«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия" data-ru="Экскурсия в мультимедийный интерактивный комплекс национального парка «Бурабай»">«Бурабай» ұлттық паркіндегі мультимедиялық интерактивті кешенге экскурсия</li>
+         </ul>
+       </div>
+     </div>
+   </div>
 
     <div class="loc-grid" style="margin-top:6px;">
-      <div class="loc-col">
-        <div class="group" style="margin-bottom:0;">
-          <div class="row" style="grid-template-columns:44px 1fr;">
-            <div class="row-icon"><svg class="ic"><use href="#i-compass"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Оқжетпес қиясы" data-ru="Скала Окжетпес">Оқжетпес қиясы</h4>
-              <div class="person" style="margin-top:7px;"><span data-kk="Топ жұмысы мен тимбилдинг форматындағы белсенді белсенді демалыс." data-ru="Тимбилдинг и активный отдых в формате командной работы.">Топ жұмысы мен тимбилдинг форматындағы белсенді демалыс.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="loc-col">
-        <div class="group" style="margin-bottom:0;">
-          <div class="row" style="grid-template-columns:44px 1fr;">
-            <div class="row-icon"><svg class="ic"><use href="#i-play-screen"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="«Бурабай» интерактивті кешені" data-ru="Интерактивный комплекс «Бурабай»">«Бурабай» интерактивті кешені</h4>
-              <div class="person" style="margin-top:7px;"><span data-kk="Ұлттық парктің мультимедиялық экспозициясымен танысу." data-ru="Знакомство с мультимедийной экспозицией национального парка.">Ұлттық парктің мультимедиялық экспозициясымен танысу.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="loc-col">
-        <div class="group" style="margin-bottom:0;">
-          <div class="row" style="grid-template-columns:44px 1fr;">
-            <div class="row-icon"><svg class="ic"><use href="#i-mountain"/></svg></div>
-            <div class="row-body">
-              <h4 data-kk="Ботай-Бурабай музейі" data-ru="Музей «Ботай-Бурабай»">Ботай-Бурабай музейі</h4>
-              <div class="person" style="margin-top:7px;"><span data-kk="Ашық аспан астындағы этнографиялық экспонаттар." data-ru="Этнографические экспонаты под открытым небом.">Ашық аспан астындағы этнографиялық экспонаттар.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+     <div class="loc-col">
+       <div class="group" style="margin-bottom:0;">
+         <div class="row" style="grid-template-columns:44px 1fr;">
+           <div class="row-icon"><svg class="ic"><use href="#i-compass"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Оқжетпес қиясы" data-ru="Скала Окжетпес">Оқжетпес қиясы</h4>
+             <div class="person" style="margin-top:7px;"><span data-kk="Топ жұмысы мен тимбилдинг форматындағы белсенді белсенді демалыс." data-ru="Тимбилдинг и активный отдых в формате командной работы.">Топ жұмысы мен тимбилдинг форматындағы белсенді демалыс.</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="loc-col">
+       <div class="group" style="margin-bottom:0;">
+         <div class="row" style="grid-template-columns:44px 1fr;">
+           <div class="row-icon"><svg class="ic"><use href="#i-play-screen"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="«Бурабай» интерактивті кешені" data-ru="Интерактивный комплекс «Бурабай»">«Бурабай» интерактивті кешені</h4>
+             <div class="person" style="margin-top:7px;"><span data-kk="Ұлттық парктің мультимедиялық экспозициясымен танысу." data-ru="Знакомство с мультимедийной экспозицией национального парка.">Ұлттық парктің мультимедиялық экспозициясымен танысу.</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="loc-col">
+       <div class="group" style="margin-bottom:0;">
+         <div class="row" style="grid-template-columns:44px 1fr;">
+           <div class="row-icon"><svg class="ic"><use href="#i-mountain"/></svg></div>
+           <div class="row-body">
+             <h4 data-kk="Ботай-Бурабай музейі" data-ru="Музей «Ботай-Бурабай»">Ботай-Бурабай музейі</h4>
+             <div class="person" style="margin-top:7px;"><span data-kk="Ашық аспан астындағы этнографиялық экспонаттар." data-ru="Этнографические экспонаты под открытым небом.">Ашық аспан астындағы этнографиялық экспонаттар.</span></div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 
 </main>
 
-<!-- ============================================================
-     FEEDBACK
-     ============================================================ -->
 <section class="wrap" id="feedback" style="margin-top:60px;">
   <div class="feedback-card">
     <div class="fb-grid">
-      <div class="fb-left">
-        <svg class="ic-lg" style="color:var(--teal); margin-bottom:14px;"><use href="#i-chat"/></svg>
-        <h2 data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</h2>
-        <p data-kk="Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымдастырушыға жетеді." data-ru="Оставьте свои тёплые пожелания и отзыв по каждому дню и разделу программы. Сообщение напрямую поступит организатору.">Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымдастырушыға жетеді.</p>
-        <ul class="fb-points">
-          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі" data-ru="Ваши отзывы помогают улучшить качество заседания">Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі</span></li>
-          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес" data-ru="Достаточно указать имя и отзыв, другие данные не требуются">Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес</span></li>
-          <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі" data-ru="Сообщение автоматически отправляется на e-mail организатора">Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі</span></li>
-        </ul>
-        <a class="fb-contact" href="mailto:ionurlykhans@gmail.com">
-          <svg class="ic"><use href="#i-mail"/></svg>
-          <span>ionurlykhans@gmail.com</span>
-        </a>
-      </div>
+     <div class="fb-left">
+       <svg class="ic-lg" style="color:var(--teal); margin-bottom:14px;"><use href="#i-chat"/></svg>
+       <h2 data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</h2>
+       <p data-kk="Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымстарушыға жетеді." data-ru="Оставьте свои тёплые пожелания и отзыв по каждому дню и разделу программы. Сообщение напрямую поступит организатору.">Әр бөлім, әр күн бойынша жылы лебізіңіз бен пікіріңізді қалдырыңыз. Хабарламаңыз тікелей ұйымдастырушыға жетеді.</p>
+       <ul class="fb-points">
+         <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі" data-ru="Ваши отзывы помогают улучшить качество заседания">Пікірлеріңіз отырыс сапасын жақсартуға көмектеседі</span></li>
+         <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес" data-ru="Достаточно указать имя и отзыв, другие данные не требуются">Аты-жөніңіз бен пікіріңізді жазу жеткілікті, басқа дерек қажет емес</span></li>
+         <li><svg class="ic"><use href="#i-check-circle"/></svg><span data-kk="Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі" data-ru="Сообщение автоматически отправляется на e-mail организатора">Хабарлама автоматты түрде ұйымдастырушының e-mail поштасына жіберіледі</span></li>
+       </ul>
+       <a class="fb-contact" href="mailto:ionurlykhans@gmail.com">
+         <svg class="ic"><use href="#i-mail"/></svg>
+         <span>ionurlykhans@gmail.com</span>
+       </a>
+     </div>
 
-      <div>
-        <form id="fbForm" action="https://formsubmit.co/ajax/ionurlykhans@gmail.com" method="POST">
-          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="_subject" value="ҚКО Көкшетау 2026 — жаңа пікір / Новый отзыв">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
+     <div>
+       <form id="fbForm" action="https://formsubmit.co/ajax/ionurlykhans@gmail.com" method="POST">
+         <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+         <input type="hidden" name="_subject" value="ҚКО Көкшетау 2026 — жаңа пікір / Новый отзыв">
+         <input type="hidden" name="_template" value="table">
+         <input type="hidden" name="_captcha" value="false">
 
-          <div class="field">
-            <label data-kk="Аты-жөніңіз" data-ru="Ваше имя">Аты-жөніңіз</label>
-            <input type="text" name="name" id="fbName" required data-kk-ph="Мысалы: Айгерім Болатова" data-ru-ph="Например: Айгерим Болатова" placeholder="Мысалы: Айгерім Болатова">
-          </div>
+         <div class="field">
+           <label data-kk="Аты-жөніңіз" data-ru="Ваше имя">Аты-жөніңіз</label>
+           <input type="text" name="name" id="fbName" required data-kk-ph="Мысалы: Айгерім Болатова" data-ru-ph="Например: Айгерим Болатова" placeholder="Мысалы: Айгерім Болатова">
+         </div>
 
-          <div class="field-row">
-            <div class="field">
-              <label data-kk="Күн" data-ru="День">Күн</label>
-              <select name="day" id="fbDay">
-                <option value="day1" data-kk="26 маусым, жұма" data-ru="26 июня, пятница">26 маусым, жұма</option>
-                <option value="day2" data-kk="27 маусым, сенбі" data-ru="27 июня, суббота">27 маусым, сенбі</option>
-                <option value="both" data-kk="Екі күнге де" data-ru="На оба дня">Екі күнге де</option>
-              </select>
-            </div>
-            <div class="field">
-              <label data-kk="Бөлім" data-ru="Раздел">Бөлім</label>
-              <select name="section" id="fbSection">
-                <option value="general" data-kk="Жалпы бағдарлама" data-ru="Общая программа">Жалпы бағдарлама</option>
-                <option value="opening" data-kk="Ашылу салтанаты" data-ru="Открытие заседания">Ашылу салтанаты</option>
-                <option value="plenary" data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</option>
-                <option value="loc1" data-kk="1-локация: семинарлар" data-ru="Локация 1: семинары">1-локация: семинарлар</option>
-                <option value="loc2" data-kk="2-локация: Балалар кітапханасы" data-ru="Локация 2: Детская библиотека">2-локация: Балалар кітапханасы</option>
-                <option value="loc3" data-kk="3-локация: БАҺ және жас мамандар" data-ru="Локация 3: ПР и молодые специалисты">3-локация: БАҺ және жас мамандар</option>
-                <option value="excursion" data-kk="Экскурсиялық күн (27 маусым)" data-ru="Экскурсионный день (27 июня)">Экскурсиялық күн (27 маусым)</option>
-              </select>
-            </div>
-          </div>
+         <div class="field-row">
+           <div class="field">
+             <label data-kk="Күн" data-ru="День">Күн</label>
+             <select name="day" id="fbDay">
+               <option value="day1" data-kk="26 маусым, жұма" data-ru="26 июня, пятница">26 маусым, жұма</option>
+               <option value="day2" data-kk="27 маусым, сенбі" data-ru="27 июня, суббота">27 маусым, сенбі</option>
+               <option value="both" data-kk="Екі күнге де" data-ru="На оба дня">Екі күнге де</option>
+             </select>
+           </div>
+           <div class="field">
+             <label data-kk="Бөлім" data-ru="Раздел">Бөлім</label>
+             <select name="section" id="fbSection">
+               <option value="general" data-kk="Жалпы бағдарлама" data-ru="Общая программа">Жалпы бағдарлама</option>
+               <option value="opening" data-kk="Ашылу салтанаты" data-ru="Открытие заседания">Ашылу салтанаты</option>
+               <option value="plenary" data-kk="Пленарлық отырыс" data-ru="Пленарное заседание">Пленарлық отырыс</option>
+               <option value="loc1" data-kk="1-локация: семинарлар" data-ru="Локация 1: семинары">1-локация: семинарлар</option>
+               <option value="loc2" data-kk="2-локация: Балалар кітапханасы" data-ru="Локация 2: Детская библиотека">2-локация: Балалар кітапханасы</option>
+               <option value="loc3" data-kk="3-локация: БАҺ және жас мамандар" data-ru="Локация 3: ПР и молодые специалисты">3-локация: БАҺ және жас мамандар</option>
+               <option value="excursion" data-kk="Экскурсиялық күн (27 маусым)" data-ru="Экскурсионный день (27 июня)">Экскурсиялық күн (27 маусым)</option>
+             </select>
+           </div>
+         </div>
 
-          <div class="field">
-            <label data-kk="Жылы лебізіңіз мен пікіріңіз" data-ru="Ваши тёплые пожелания и отзыв">Жылы лебізіңіз мен пікіріңіз</label>
-            <textarea name="message" id="fbMessage" required data-kk-ph="Пікіріңізді осында жазыңыз…" data-ru-ph="Напишите свой отзыв здесь…" placeholder="Пікіріңізді осында жазыңыз…"></textarea>
-          </div>
+         <div class="field">
+           <label data-kk="Жылы лебізіңіз мен пікіріңіз" data-ru="Ваши тёплые пожелания и отзыв">Жылы лебізіңіз мен пікіріңіз</label>
+           <textarea name="message" id="fbMessage" required data-kk-ph="Пікіріңізді осында жазыңыз…" data-ru-ph="Напишите свой отзыв здесь…" placeholder="Пікіріңізді осында жазыңыз…"></textarea>
+         </div>
 
-          <button type="submit" class="submit-btn" id="fbSubmit">
-            <svg class="ic"><use href="#i-send"/></svg>
-            <span data-kk="Жіберу" data-ru="Отправить">Жіберу</span>
-          </button>
+         <button type="submit" class="submit-btn" id="fbSubmit">
+           <svg class="ic"><use href="#i-send"/></svg>
+           <span data-kk="Жіберу" data-ru="Отправить">Жіберу</span>
+         </button>
 
-          <div class="form-msg" id="fbMsg"></div>
-          <a class="mailto-fallback" id="fbMailto" href="#"><svg class="ic"><use href="#i-mail"/></svg><span data-kk="Email арқылы тікелей жіберу" data-ru="Отправить письмом напрямую">Email арқылы тікелей жіберу</span></a>
-        </form>
-      </div>
-    </div>
-  </div>
+         <div class="form-msg" id="fbMsg"></div>
+         <a class="mailto-fallback" id="fbMailto" href="#"><svg class="ic"><use href="#i-mail"/></svg><span data-kk="Email арқылы тікелей жіберу" data-ru="Отправить письмом напрямую">Email арқылы тікелей жіберу</span></a>
+       </form>
+     </div>
+   </div>
+ </div>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
 <footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div class="footer-org">
-        <svg class="ic-lg" style="color:var(--teal);"><use href="#i-book-stack"/></svg>
-        <div>
-          <b data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз">Қазақстан Кітапханалар Одағы</b>
-          <span data-kk="Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026" data-ru="г. Кокшетау, ул. Абая, 111 · 26–27 июня 2026">Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026</span>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="#program"><svg class="ic"><use href="#i-calendar"/></svg><span data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</span></a>
-        <a href="#feedback"><svg class="ic"><use href="#i-chat"/></svg><span data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</span></a>
-        <a href="mailto:ionurlykhans@gmail.com"><svg class="ic"><use href="#i-mail"/></svg><span>ionurlykhans@gmail.com</span></a>
-      </div>
-    </div>
+     <div class="footer-org">
+       <svg class="ic-lg" style="color:var(--teal);"><use href="#i-book-stack"/></svg>
+       <div>
+         <b data-kk="Қазақстан Кітапханалар Одағы" data-ru="Казахстанский библиотечный союз">Қазақстан Кітапханалар Одағы</b>
+         <span data-kk="Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026" data-ru="г. Кокшетау, ул. Абая, 111 · 26–27 июня 2026">Көкшетау қ., Абай к-сі, 111 · 26–27 маусым 2026</span>
+       </div>
+     </div>
+     <div class="footer-links">
+       <a href="#program"><svg class="ic"><use href="#i-calendar"/></svg><span data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</span></a>
+       <a href="#feedback"><svg class="ic"><use href="#i-chat"/></svg><span data-kk="Кері байланыс" data-ru="Обратная связь">Кері байланыс</span></a>
+       <a href="mailto:ionurlykhans@gmail.com"><svg class="ic"><use href="#i-mail"/></svg><span>ionurlykhans@gmail.com</span></a>
+     </div>
+   </div>
     <div class="footer-divider"></div>
     <div class="signature">
-      <p><b data-kk="Сайтты жасаған Нұрлыхан Қасымханұлы" data-ru="Сайт разработал Нурлыхан Касымханулы">Сайтты жасаған Нұрлыхан Қасымханұлы</b><br>
-      <span data-kk="ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі" data-ru="Национальная библиотека РК, Научно-методическая служба">ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі</span></p>
-    </div>
-  </div>
+     <p><b data-kk="Сайтты жасаған Нұрлыхан Қасымханұлы" data-ru="Сайт разработал Нурлыхан Касымханулы">Сайтты жасаған Нұрлыхан Қасымханұлы</b><br>
+     <span data-kk="ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі" data-ru="Национальная библиотека РК, Научно-методическая служба">ҚР Ұлттық кітапханасы, Ғылыми-әдістемелік қызметі</span></p>
+   </div>
+ </div>
 </footer>
 
 <button class="to-top" id="toTop" aria-label="top"><svg class="ic"><use href="#i-arrow-up"/></svg></button>
@@ -1224,17 +1212,17 @@ form#fbForm{display:flex; flex-direction:column; gap:14px;}
 
   var DYN = {
     kk:{ upcoming:"Жақында", live:"Қазір", done:"Өтті",
-         eventLive:"Отырыс қазір өтіп жатыр", eventDay2:"Бүгін — экскурсия күні",
-         eventDone:"Отырыс аяқталды. Рахмет!",
-         sending:"Жіберіліп жатыр…", sentOk:"Рахмет! Пікіріңіз ұйымдастырушыға жіберілді.",
-         sentFail:"Жіберілмеді. Төмендегі сілтеме арқылы тікелей хатпен жіберіп көріңіз.",
-         fillRequired:"Аты-жөніңізді және пікіріңізді жазыңыз." },
+        eventLive:"Отырыс қазір өтіп жатыр", eventDay2:"Бүгін — экскурсия күні",
+        eventDone:"Отырыс аяқталды. Рахмет!",
+        sending:"Жіберіліп жатыр…", sentOk:"Рахмет! Пікіріңіз ұйымдастырушыға жіберілді.",
+        sentFail:"Жіберілмеді. Төмендегі сілтеме арқылы тікелей хатпен жіберіп көріңіз.",
+        fillRequired:"Аты-жөніңізді және пікіріңізді жазыңыз." },
     ru:{ upcoming:"Скоро", live:"Сейчас", done:"Прошло",
-         eventLive:"Заседание идёт прямо сейчас", eventDay2:"Сегодня — день экскурсии",
-         eventDone:"Заседание завершено. Спасибо!",
-         sending:"Отправка…", sentOk:"Спасибо! Ваш отзыв отправлен организатору.",
-         sentFail:"Не удалось отправить. Попробуйте отправить письмом напрямую по ссылке ниже.",
-         fillRequired:"Пожалуйста, укажите имя и отзыв." }
+        eventLive:"Заседание идёт прямо сейчас", eventDay2:"Сегодня — day экскурсии",
+        eventDone:"Заседание завершено. Спасибо!",
+        sending:"Отправка…", sentOk:"Спасибо! Ваш отзыв отправлен организатору.",
+        sentFail:"Не удалось отправить. Попробуйте отправить письмом напрямую по ссылке ниже.",
+        fillRequired:"Пожалуйста, укажите имя и отзыв." }
   };
 
   var lang = "kk";
